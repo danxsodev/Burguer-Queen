@@ -69,6 +69,7 @@ nav button {
 /*MENU EXPANDED*/
 body.menu-expanded {
     overflow: hidden;
+    transition: 3s ease-in;
 }
 
 body.menu-expanded > :not(nav) {
