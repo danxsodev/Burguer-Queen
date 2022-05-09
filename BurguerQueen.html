@@ -12,7 +12,7 @@
     <title>Burguer Queen</title>
 </head>
 
-<body onscroll="onScroll()">
+<body onscroll="onScroll()" class="menu-expanded">
     <nav id="navigation" class="scroll">
         <div class="wrapper">
             <!--logo-->
@@ -29,17 +29,19 @@
                 </ul>
 
                 <ul class="social-links">
-                    <li><a href="https://facebook.com">logo svg face</a></li>
-                    <li><a href="https://instagram.com">logo svg insta</a></li>
+                    <li><a target="_blank" href="https://facebook.com">logo svg face</a></li>
+                    <li><a target="_blank" href="https://instagram.com">logo svg insta</a></li>
                 </ul>
             </div>
 
-            <button id="open-menu">
+            <button aria-expanded="false" aria-label="abrir menu" onclick="openMenu()" id="open-menu">
                 <!--icone que abre o menu svg-->
+                <h5>abre o menu</h5>
             </button>
 
-            <button id="close-menu">
+            <button aria-expanded="true" aria-label="fechar menu" onclick="closeMenu()" id="close-menu">
                 <!--icone que fecha o menu svg-->
+                <h5>fecha o menu</h5>
             </button>
         </div>
     </nav>
