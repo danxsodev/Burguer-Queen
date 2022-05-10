@@ -2,7 +2,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -64,12 +65,12 @@ nav button {
     background: none;
     border: none;
     cursor: pointer;
+    margin-top: var(--height-nav);
 }
 
 /*MENU EXPANDED*/
 body.menu-expanded {
     overflow: hidden;
-    transition: 3s ease-in;
 }
 
 body.menu-expanded > :not(nav) {
@@ -214,7 +215,35 @@ header img {
     line-height: 150%;
 }
 
-button /*whatsapp*/ {
+/*CARDAPIO*/
+#cardapio header h3 {
+    font-size: 1.4rem;
+    line-height: 150%;
+    letter-spacing: 0.08rem;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+
+    margin-bottom: 1.6rem;
+}
+
+#cardapio header h2 {
+    font-size: 3rem;
+    line-height: 3.9rem;
+    color: var(--paragraph-color);
+    margin-bottom: 6rem;
+}
+
+.card {
+    padding: 2.4rem;
+    text-align: left;
+    background: white;
+    border: 1px solid var(--stats-color);
+    box-sizing: border-box;
+    border-radius: 0. 6rem;
+    background-color: var(--before-color);
+}
+
+button {
     background-color: var(--button-color);
     border: none;
     border-radius: 4rem;
