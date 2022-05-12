@@ -73,6 +73,10 @@ body.menu-expanded {
     overflow: hidden;
 }
 
+.h-escon
+{
+    visibility: hidden;
+}
 body.menu-expanded > :not(nav) {
     display: none;
 }
