@@ -1,3 +1,10 @@
+function start() {
+    navigation.classList.remove('scroll');
+    document.body.classList.remove('menu-expanded');
+    document.getElementById("open-menu").style.visibility="visible";
+    document.getElementById("close-menu").style.visibility="hidden";
+}
+
 function onScroll() {
     if (scrollY > 0) {
         navigation.classList.add('scroll')
