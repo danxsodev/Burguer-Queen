@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
 }
 
 :root {
@@ -19,6 +18,12 @@
     font-size: 62.5%; /* 1rem = 10 px */
 }
 
+/*animar transições no site*/
+html {
+    scroll-behavior: smooth;
+    transition: 3s ease;
+}
+
 html,
 body {
     width: 100%;
@@ -30,6 +35,7 @@ body {
     font-size: 1.6rem;
     text-align: center;
     overflow: overlay;
+    background-color: var(--before-color);
 }
 
 /*NAV*/
@@ -73,10 +79,6 @@ body.menu-expanded {
     overflow: hidden;
 }
 
-.h-escon
-{
-    visibility: hidden;
-}
 body.menu-expanded > :not(nav) {
     display: none;
 }
@@ -146,8 +148,12 @@ body.menu-expanded button path {
     stroke: white;
 }
 
-/*HEADER*/
-header::before {
+/*HOME*/
+#home {
+    padding-top: calc(4.1rem + var(--height-nav));
+}
+
+#home::before {
     content: "";
     width: 100%;
     height: calc(108rem + var(--height-nav));
@@ -159,24 +165,20 @@ header::before {
     z-index: -1;
 }
 
-header {
-    margin-top: calc(4.1rem + var(--height-nav)) ;
-}
-
-header h3 {
+#home h3 {
     font-size: 1.4rem;
     color: var(--secondary-color);
     margin-bottom: 1.6rem;
 }
 
-header h1 {
+#home h1 {
     font-size: 3.4rem;
     color: var(--primary-color);
     line-height: 130%;
     margin-bottom: 2.4rem;
 }
 
-header p {
+#home p {
     font-size: 1.8rem;
     line-height: 150%;
     font-weight: 400;
@@ -184,7 +186,7 @@ header p {
     margin-bottom: 3.2rem;
 }
 
-header img {
+#home img {
     width: 26.4rem;
     display: block;
     margin-left: auto;
@@ -192,7 +194,8 @@ header img {
     object-position: 0.2rem;
 }
 
-.stats {
+/*SOBRE*/
+#sobre .stats {
     width: 32.7rem;
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -206,20 +209,24 @@ header img {
     gap: 6rem;
 }
 
-.stat h3 {
+#sobre .stat h3 {
     font-size: 4.8rem;
     color: var(--primary-color); 
     line-height: 130%;
     margin-bottom: 0.4rem;
 }
 
-.stat p {
+#sobre .stat p {
     margin: 0;
     color: var(--paragraph-color);
     line-height: 150%;
 }
 
 /*CARDAPIO*/
+section {
+    padding-block: 10rem;
+}
+
 #cardapio header h3 {
     font-size: 1.4rem;
     line-height: 150%;
@@ -237,7 +244,13 @@ header img {
     margin-bottom: 6rem;
 }
 
-.card {
+#cardapio .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+#cardapio .card {
     padding: 2.4rem;
     text-align: left;
     background: white;

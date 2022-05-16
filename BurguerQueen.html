@@ -21,11 +21,11 @@
             
             <div class="menu">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Cardapio</a></li>
-                    <li><a href="#">Depoimentos</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a onclick="closeMenu()" href="#home">Home</a></li>
+                    <li><a onclick="closeMenu()" href="#sobre">Sobre</a></li>
+                    <li><a onclick="closeMenu()" href="#cardapio">Cardapio</a></li>
+                    <li><a onclick="closeMenu()" href="#">Depoimentos</a></li>
+                    <li><a onclick="closeMenu()" href="#">Contato</a></li>
                 </ul>
 
                 <ul class="social-links">
@@ -63,7 +63,7 @@
         </div>
     </nav>
 
-    <header class="wrapper">
+    <header id="home" class="wrapper">
         <h3> BEM VINDO A BURGUER QUEEN </h3>
         
         <h1> A melhor hamburgueria artesanal do estado de São Paulo </h1> 
@@ -71,9 +71,10 @@
         <p> Hamburguers de diversos sabores e tamanhos num espaço totalmente aconchegante. </p>
                 
         <!--Adicionar imagem svg/png do Hamburguer, site com imagens/fotografias gratuitas: unsplash-->
-        
         <img src="" alt="descrever a imagem do Hamburguer"/>
+    </header>
 
+    <header id="sobre" class="wrapper">
         <div class="stats">
             <div class="stat">
                 <h3>+5000</h3>
@@ -91,7 +92,7 @@
             </div>
         </div>
     </header>
-
+    
     <main>
         <!--Cardapio-->
         <section id="cardapio">
