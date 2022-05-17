@@ -24,4 +24,3 @@ function closeMenu() {
     document.getElementById("close-menu").style.visibility="hidden";
     document.getElementById("open-menu").style.visibility="visible";
 }
-
