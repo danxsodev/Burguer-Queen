@@ -283,3 +283,36 @@ button {
     margin-right: auto;
     cursor: pointer;
 }
+
+#depoimentos header h3 {
+    font-size: 1.4rem;
+    line-height: 150%;
+    letter-spacing: 0.08rem;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+}
+
+#depoimentos header h2 {
+    font-size: 3rem;
+    line-height: 3.9rem;
+    color: var(--paragraph-color);
+    margin-bottom: 6rem;
+}
+
+#depoimentos .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+#depoimentos .card {
+    padding: 2.4rem;
+    text-align: left;
+    background: white;
+    border: 1px solid var(--stats-color);
+    box-sizing: border-box;
+    border-radius: 0. 6rem;
+    background-color: var(--before-color);
+}
+

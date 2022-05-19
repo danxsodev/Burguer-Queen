@@ -24,3 +24,22 @@ function closeMenu() {
     document.getElementById("close-menu").style.visibility="hidden";
     document.getElementById("open-menu").style.visibility="visible";
 }
+
+ScrollReveal({
+    origin: 'top',
+    distance: '10px',
+    duration: 700,
+}).reveal(`#navigation,
+#home,
+#home .wrapper, 
+#home .content, 
+#home img, 
+#sobre,
+#sobre .wrapper, 
+#sobre .stat,
+#cardapio,
+#cardapio .wrapper, 
+#cardapio .card,
+#depoimentos,
+#depoimentos .wrapper, 
+#depoimentos .card`)
