@@ -29,6 +29,7 @@ ScrollReveal({
     origin: 'top',
     distance: '10px',
     duration: 700,
+    reset: true
 }).reveal(`#navigation,
 #home,
 #home .wrapper, 
@@ -43,3 +44,23 @@ ScrollReveal({
 #depoimentos,
 #depoimentos .wrapper, 
 #depoimentos .card`)
+
+ScrollReveal({
+    origin: 'bottom',
+    distance: '10px',
+    duration: 700,
+    reset: true
+}).reveal(`#depoimentos .card,
+#depoimentos .wrapper, 
+#depoimentos,
+#cardapio .card,
+#cardapio .wrapper, 
+#cardapio,
+#sobre .stat,
+#sobre .wrapper, 
+#sobre,
+#home img, 
+#home .content, 
+#home .wrapper, 
+#home,
+#navigation`)
