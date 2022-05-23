@@ -27,8 +27,8 @@ function onScroll() {
 
 ScrollReveal({
     origin: 'top',
-    distance: '10px',
-    duration: 700,
+    distance: '30px',
+    duration: 900,
     reset: true
 }).reveal(`#navigation,
 #home,
@@ -47,8 +47,8 @@ ScrollReveal({
 
 ScrollReveal({
     origin: 'bottom',
-    distance: '10px',
-    duration: 700,
+    distance: '30px',
+    duration: 900,
     reset: true
 }).reveal(`#depoimentos .card,
 #depoimentos .wrapper, 
