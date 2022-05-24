@@ -25,8 +25,8 @@ html {
 
 html,
 body {
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 body {
@@ -174,7 +174,11 @@ body.menu-expanded button path {
 
 #home h3 {
     font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.08rem;
     color: var(--secondary-color);
+    text-transform: uppercase;
     margin-bottom: 1.6rem;
 }
 
@@ -185,7 +189,7 @@ body.menu-expanded button path {
     margin-bottom: 2.4rem;
 }
 
-#home p {
+#home .content p {
     font-size: 1.8rem;
     line-height: 150%;
     font-weight: 400;
@@ -232,11 +236,11 @@ body.menu-expanded button path {
 /*CARDAPIO*/
 #cardapio header h3 {
     font-size: 1.4rem;
+    font-weight: 700;
     line-height: 150%;
     letter-spacing: 0.08rem;
     color: var(--secondary-color);
     text-transform: uppercase;
-
     margin-bottom: 1.6rem;
 }
 
@@ -263,6 +267,21 @@ body.menu-expanded button path {
     background-color: var(--before-color);
 }
 
+#cardapio .content h3 {
+    font-size: 1.8rem;
+    line-height: 150%;
+    font-weight: 700;
+    color: var(--paragraph-color);
+    text-transform: uppercase;
+}
+
+#cardapio .content p {
+    font-size: 1.6rem;
+    line-height: 150%;
+    font-weight: 400;
+    color: var(--paragraph-color);
+}
+
 button {
     background-color: var(--button-color);
     border: none;
@@ -283,8 +302,10 @@ button {
     cursor: pointer;
 }
 
+/*DEPOIMENTOS*/
 #depoimentos header h3 {
     font-size: 1.4rem;
+    font-weight: 700;
     line-height: 150%;
     letter-spacing: 0.08rem;
     color: var(--secondary-color);
@@ -315,3 +336,53 @@ button {
     background-color: var(--before-color);
 }
 
+#depoimentos .content h3 {
+    font-size: 1.8rem;
+    line-height: 150%;
+    font-weight: 700;
+    color: var(--paragraph-color);
+    text-transform: uppercase;
+}
+
+#depoimentos .content p {
+    font-size: 1.6rem;
+    line-height: 150%;
+    font-weight: 400;
+    color: var(--paragraph-color);
+}
+
+/*CONTATO*/
+#contato header h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.08rem;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+}
+
+#contato header h2 {
+    font-size: 3rem;
+    line-height: 3.9rem;
+    color: var(--paragraph-color);
+    margin-bottom: 6rem;
+}
+
+/*FAQ*/
+#faq header h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.08rem;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+}
+
+#faq header h2 {
+    font-size: 3rem;
+    line-height: 3.9rem;
+    color: var(--paragraph-color);
+    margin-bottom: 6rem;
+}
