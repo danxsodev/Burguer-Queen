@@ -41,6 +41,7 @@ ScrollReveal({
 #cardapio,
 #cardapio .wrapper, 
 #cardapio .card,
+.whatsapp,
 #depoimentos,
 #depoimentos .wrapper, 
 #depoimentos .card`)
@@ -53,6 +54,7 @@ ScrollReveal({
 }).reveal(`#depoimentos .card,
 #depoimentos .wrapper, 
 #depoimentos,
+.whatsapp,
 #cardapio .card,
 #cardapio .wrapper, 
 #cardapio,
