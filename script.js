@@ -44,14 +44,20 @@ ScrollReveal({
 .whatsapp,
 #depoimentos,
 #depoimentos .wrapper, 
-#depoimentos .card`)
+#depoimentos .card,
+#contato, 
+#contato .wrapper,
+#contato .content`)
 
 ScrollReveal({
     origin: 'bottom',
     distance: '30px',
     duration: 900,
     reset: true
-}).reveal(`#depoimentos .card,
+}).reveal(`#contato .content,
+#contato .wrapper,
+#contato,
+#depoimentos .card,
 #depoimentos .wrapper, 
 #depoimentos,
 .whatsapp,
