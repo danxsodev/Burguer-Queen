@@ -76,10 +76,6 @@ nav.scroll {
     background-color: var(--primary-color);
 }
 
-nav.scroll .logo path {
-    fill: white;
-}
-
 nav button path {
     stroke: var(--primary-color);
 }
@@ -151,7 +147,7 @@ body.menu-expanded .menu {
 }
 
 .menu ul li a:hover {
-    background-color: var(--secondary-color);
+    text-shadow: 0.1em 0.1em 0.6em hsla(33, 100%, 50%, 0.75);
 }
 
 .social-links {
@@ -161,6 +157,36 @@ body.menu-expanded .menu {
     list-style: none;
     margin-top: 6rem;
     gap: 3.2rem;
+}
+
+ul li .social-facebook svg:hover {
+    transform:scale(1.5);
+    transition: transform 300ms;
+}
+
+.social-facebook svg {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+ul li .social-instagram svg:hover {
+    transform:scale(1.5);
+    transition: transform 300ms;
+}
+
+.social-instagram svg {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+ul li .social-whatsapp svg:hover {
+    transform:scale(1.5);
+    transition: transform 300ms;
+}
+
+.social-whatsapp svg {
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
 body.menu-expanded .logo,
