@@ -26,8 +26,8 @@ html {
 
 html,
 body {
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 body {
@@ -42,6 +42,10 @@ body {
     width: 37.5rem;
     margin-inline: auto;
     padding-inline: 2.4rem;
+}
+
+img {
+    max-width: 100%;
 }
 
 a {
@@ -76,6 +80,14 @@ nav.scroll .logo path {
     fill: white;
 }
 
+nav button path {
+    stroke: var(--primary-color);
+}
+
+nav.scroll button path {
+    stroke: white;
+}
+
 nav button {
     background: none;
     border: none;
@@ -93,14 +105,14 @@ body.menu-expanded > :not(nav) {
 }
 
 .menu,
-.close-menu,
-body.menu-expanded .open-menu {
+#close-menu,
+body.menu-expanded #open-menu {
     opacity: 0;
     visibility: hidden;
 }
 
 body.menu-expanded .menu,
-body.menu-expanded .close-menu {
+body.menu-expanded #close-menu {
     opacity: 1;
     visibility: visible;
 }
@@ -135,6 +147,11 @@ body.menu-expanded .menu {
 .menu ul li a {
     color: white;
     text-decoration: none;
+    transition: background 300ms;
+}
+
+.menu ul li a:hover {
+    background-color: var(--secondary-color);
 }
 
 .social-links {
@@ -287,7 +304,7 @@ body.menu-expanded button path {
     color: var(--paragraph-color);
 }
 
-.whatsapp {
+#cardapio .whatsapp {
     background-color: var(--button-color);
     border: none;
     height: 6.2rem;
@@ -400,6 +417,7 @@ body.menu-expanded button path {
     background-color: var(--button-color);
     border: none;
     border-radius: 4rem;
+    margin-top: 6rem;
     margin-bottom: 6rem;
     height: 6.2rem;
     width: 26.3rem;
