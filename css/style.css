@@ -159,17 +159,12 @@ body.menu-expanded .menu {
     gap: 3.2rem;
 }
 
-ul li .social-facebook svg:hover {
-    transform:scale(1.5);
-    transition: transform 300ms;
-}
-
 .social-facebook svg {
     width: 2.5rem;
     height: 2.5rem;
 }
 
-ul li .social-instagram svg:hover {
+ul li .social-facebook svg:hover {
     transform:scale(1.5);
     transition: transform 300ms;
 }
@@ -179,7 +174,7 @@ ul li .social-instagram svg:hover {
     height: 2.5rem;
 }
 
-ul li .social-whatsapp svg:hover {
+ul li .social-instagram svg:hover {
     transform:scale(1.5);
     transition: transform 300ms;
 }
@@ -187,6 +182,11 @@ ul li .social-whatsapp svg:hover {
 .social-whatsapp svg {
     width: 2.5rem;
     height: 2.5rem;
+}
+
+ul li .social-whatsapp svg:hover {
+    transform:scale(1.5);
+    transition: transform 300ms;
 }
 
 body.menu-expanded .logo,
@@ -439,6 +439,10 @@ body.menu-expanded button path {
     gap: 0.8rem;
 }
 
+#contato ul li path {
+    stroke: var(--secondary-color);
+}
+
 #contato .whatsapp {
     background-color: var(--button-color);
     border: none;
@@ -466,6 +470,10 @@ body.menu-expanded button path {
 }
 
 /*FAQ*/
+#faq {
+    cursor: pointer;
+}
+
 #faq header h3 {
     font-size: 1.4rem;
     font-weight: 700;
@@ -481,4 +489,59 @@ body.menu-expanded button path {
     line-height: 3.9rem;
     color: var(--paragraph-color);
     margin-bottom: 6rem;
+}
+
+#faq .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+#faq .card {
+    padding: 2.4rem;
+    text-align: left;
+    background: white;
+    border: 1px solid var(--stats-color);
+    box-sizing: border-box;
+    border-radius: 0. 6rem;
+    background-color: var(--before-color);
+}
+
+#faq .questao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#faq .questao h4 {
+    font-size: 1.8rem;
+    line-height: 150%;
+    font-weight: 700;
+    color: var(--paragraph-color);
+}
+
+#faq svg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resposta p {
+    padding-top: 1rem;
+    font-size: 1.6rem;
+    line-height: 150%;
+    font-weight: 400;
+    color: var(--paragraph-color);
+}
+
+.resposta {
+    overflow: hidden;
+}
+
+
+/*FOOTER*/
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding-block: 6rem;
 }
