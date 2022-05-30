@@ -76,6 +76,14 @@ nav.scroll {
     background-color: var(--primary-color);
 }
 
+nav .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 21rem;
+    height: 21rem;
+}
+
 nav button path {
     stroke: var(--primary-color);
 }
@@ -85,9 +93,15 @@ nav.scroll button path {
 }
 
 nav button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background: none;
     border: none;
     cursor: pointer;
+}
+
+nav .logo button {
     margin-top: var(--height-nav);
 }
 
@@ -193,10 +207,6 @@ body.menu-expanded .logo,
 body.menu-expanded button {
     position: relative;
     z-index: 100;
-}
-
-body.menu-expanded .logo path {
-    fill: white;
 }
 
 body.menu-expanded button path {
@@ -537,7 +547,6 @@ body.menu-expanded button path {
 .resposta {
     overflow: hidden;
 }
-
 
 /*FOOTER*/
 footer {
