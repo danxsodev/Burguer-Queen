@@ -26,7 +26,7 @@ html {
 
 html,
 body {
-    width: 100%;
+    max-width: 100%;
     height: 100%;
 }
 
@@ -312,6 +312,8 @@ body.menu-expanded button path {
 #cardapio .cards {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 3.2rem;
 }
 
@@ -384,9 +386,11 @@ body.menu-expanded button path {
     margin-bottom: 6rem;
 }
 
-#depoimentos .cards {
+#depoimentos.cards {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 3.2rem;
 }
 
@@ -417,7 +421,10 @@ body.menu-expanded button path {
 
 /*CONTATO*/
 #contato {
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #contato header h3 {
@@ -481,7 +488,10 @@ body.menu-expanded button path {
 
 /*FAQ*/
 #faq {
-    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #faq header h3 {
@@ -515,6 +525,7 @@ body.menu-expanded button path {
     box-sizing: border-box;
     border-radius: 0. 6rem;
     background-color: var(--before-color);
+    cursor: pointer;
 }
 
 #faq .questao {
@@ -536,6 +547,11 @@ body.menu-expanded button path {
     align-items: center;
 }
 
+.resposta {
+    max-height: 0;
+    overflow: hidden;
+}
+
 .resposta p {
     padding-top: 1rem;
     font-size: 1.6rem;
@@ -544,8 +560,8 @@ body.menu-expanded button path {
     color: var(--paragraph-color);
 }
 
-.resposta {
-    overflow: hidden;
+.card .active .resposta {
+    max-height: 30rem;
 }
 
 /*FOOTER*/

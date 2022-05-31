@@ -73,10 +73,10 @@ ScrollReveal({
 #home,
 #navigation`)
 
-const faq = document.querySelectorAll("#faq");
+const cards = document.querySelectorAll(".card");
 
-faq.forEach(faq => {
-    faq.addEventListener("click", () => {
-        faq.classList.toggle("resposta");
-    })
-})
+cards.forEach((card) => {
+    card.addEventListener("click", () => {
+        card.classList.toggle("active");
+    });
+});
