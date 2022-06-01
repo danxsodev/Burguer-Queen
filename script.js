@@ -47,14 +47,22 @@ ScrollReveal({
 #depoimentos .card,
 #contato, 
 #contato .wrapper,
-#contato .content`)
+#contato .content,
+#faq,
+#faq .wrapper,
+#faq .card,
+#rodape`)
 
 ScrollReveal({
     origin: 'bottom',
     distance: '30px',
     duration: 900,
     reset: true
-}).reveal(`#contato .content,
+}).reveal(`#rodape,
+#faq .card,
+#faq .wrapper,
+#faq,
+#contato .content,
 #contato .wrapper,
 #contato,
 #depoimentos .card,
