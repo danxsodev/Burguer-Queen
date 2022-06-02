@@ -3,6 +3,7 @@ function start() {
     document.body.classList.remove('menu-expanded');
     document.getElementById("open-menu").style.visibility="visible";
     document.getElementById("close-menu").style.visibility="hidden";
+    
 }
 
 function openMenu() {

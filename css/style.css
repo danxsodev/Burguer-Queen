@@ -532,6 +532,7 @@ body.menu-expanded button path {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: visible;
 }
 
 #faq .questao h4 {
@@ -545,6 +546,7 @@ body.menu-expanded button path {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transform: rotate(180deg);
     transition: transform 700ms ease-in;
 }
 
@@ -568,7 +570,8 @@ body.menu-expanded button path {
 }
 
 #faq .card.active svg {
-    transform: rotate(180deg);
+    transform: rotate(0deg);
+    transition: transform 700ms ease-in;
 }
 
 @keyframes fade {
