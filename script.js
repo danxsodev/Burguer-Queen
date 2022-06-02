@@ -3,7 +3,6 @@ function start() {
     document.body.classList.remove('menu-expanded');
     document.getElementById("open-menu").style.visibility="visible";
     document.getElementById("close-menu").style.visibility="hidden";
-    
 }
 
 function openMenu() {
@@ -19,10 +18,10 @@ function closeMenu() {
 }
 
 function onScroll() {
-    if (scrollY > 0) {
-        navigation.classList.add('scroll')
-    } else {
+    if (scrollY <= 0) {
         navigation.classList.remove('scroll')
+    } else {
+        navigation.classList.add('scroll')
     }
 }
 

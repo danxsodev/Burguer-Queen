@@ -76,7 +76,7 @@ nav.scroll {
     background-color: var(--primary-color);
 }
 
-nav .logo {
+nav.logo {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -101,7 +101,7 @@ nav button {
     cursor: pointer;
 }
 
-nav .logo button {
+nav.logo button {
     margin-top: var(--height-nav);
 }
 
@@ -221,7 +221,7 @@ body.menu-expanded button path {
 #home::before {
     content: "";
     width: 100%;
-    height: calc(108rem + var(--height-nav));
+    height: calc(108rem+var(--height-nav));
     background-color: var(--before-color);
     display: block;
     position: absolute;
@@ -255,12 +255,54 @@ body.menu-expanded button path {
     margin-bottom: 3.2rem;
 }
 
-#home img {
-    width: 26.4rem;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    object-position: 0.2rem;
+#home .slider {
+    margin: 0 auto;
+    width: 80rem;
+    height: 40rem;
+    overflow: hidden;
+}
+
+#home .slides {
+    display: flex;
+    width: 80rem;
+    height: 40rem;
+}
+
+#home .slides input {
+    display: none;
+}
+
+#home .slide {
+    width: 20%;
+    position: relative;
+}
+
+#home .slide img {
+    width: 80rem;
+}
+
+#home .navigation-manual {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 80rem;
+    margin-top: -4rem;
+}
+
+#home .navigation-manual .manual-btn {
+    border: 0.2rem solid white;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 700ms;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 4rem;
+}
+
+.manual-btn:hover {
+    background-color: white;
 }
 
 /*SOBRE*/
