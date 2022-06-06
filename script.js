@@ -1,28 +1,24 @@
-function start() {
-    navigation.classList.remove('scroll');
-    document.body.classList.remove('menu-expanded');
-    document.getElementById("open-menu").style.visibility="visible";
-    document.getElementById("close-menu").style.visibility="hidden";
-}
-
 function openMenu() {
-    document.body.classList.add('menu-expanded');
+    document.body.classList.add("menu-expanded");
     document.getElementById("open-menu").style.visibility="hidden";
     document.getElementById("close-menu").style.visibility="visible";
 }
 
 function closeMenu() {
-    document.body.classList.remove('menu-expanded');
+    document.body.classList.remove("menu-expanded");
     document.getElementById("close-menu").style.visibility="hidden";
     document.getElementById("open-menu").style.visibility="visible";
 }
 
+
 function onScroll() {
-    if (scrollY <= 0) {
-        navigation.classList.remove('scroll')
-    } else {
-        navigation.classList.add('scroll')
+    if (window.scrollY > 0) {
+        navigation.classList.add("scroll");
+    } 
+    else {
+        navigation.classList.remove("scroll");
     }
+    window.addEventListener("scroll", onScroll);
 }
 
 ScrollReveal({
