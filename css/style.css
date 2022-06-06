@@ -279,6 +279,8 @@ body.menu-expanded button path {
 
 #home .slide img {
     width: 80rem;
+    height: 40rem;
+    display: none;
 }
 
 #home .navigation-manual {
@@ -306,19 +308,19 @@ body.menu-expanded button path {
 }
 
 #radio1:checked ~ .slide-first {
-    margin: 0;
+    margin-left: 0;
 }
 
 #radio2:checked ~ .slide {
-    margin: -25%;
+    margin-left: -25%;
 }
 
 #radio3:checked ~ .slide {
-    margin: -50%;
+    margin-left: -50%;
 }
 
 #radio4:checked ~ .slide {
-    margin: -75%;
+    margin-left: -75%;
 }
 
 .navigation-auto {
