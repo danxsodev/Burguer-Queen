@@ -255,107 +255,9 @@ body.menu-expanded button path {
     margin-bottom: 3.2rem;
 }
 
-#home .slider {
-    margin: 0 auto;
-    width: 80rem;
+#home .content img {
+    max-width: 80rem;
     height: 40rem;
-    overflow: hidden;
-}
-
-#home .slides {
-    display: flex;
-    width: 80rem;
-    height: 40rem;
-}
-
-#home .slides input {
-    display: none;
-}
-
-#home .slide {
-    width: 25%;
-    position: relative;
-}
-
-#home .slide img {
-    width: 80rem;
-    height: 40rem;
-    display: none;
-}
-
-#home .navigation-manual {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    width: 80rem;
-    margin-top: -4rem;
-}
-
-#home .navigation-manual .manual-btn {
-    border: 0.2rem solid white;
-    padding: 0.5rem;
-    border-radius: 1rem;
-    cursor: pointer;
-    transition: 700ms;
-}
-
-.manual-btn:not(:last-child) {
-    margin-right: 4rem;
-}
-
-.manual-btn:hover {
-    background-color: white;
-}
-
-#radio1:checked ~ .slide-first {
-    margin-left: 0;
-}
-
-#radio2:checked ~ .slide {
-    margin-left: -25%;
-}
-
-#radio3:checked ~ .slide {
-    margin-left: -50%;
-}
-
-#radio4:checked ~ .slide {
-    margin-left: -75%;
-}
-
-.navigation-auto {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    width: 80rem;
-    margin-top: 36rem;
-}
-
-div .navigation-auto {
-    padding: 0.5rem;
-    border-radius: 1rem;
-    cursor: pointer;
-    transition: 700ms;
-}
-
-div .navigation-auto:not(:last-child) {
-    margin-right: 4rem;
-}
-
-#radio1:checked ~ .navigation-auto.auto-btn1 {
-    background-color: white;
-}
-
-#radio2:checked ~ .navigation-auto.auto-btn2 {
-    background-color: white;
-}
-
-#radio3:checked ~ .navigation-auto.auto-btn3 {
-    background-color: white;
-}
-
-#radio4:checked ~ .navigation-auto.auto-btn4 {
-    background-color: white;
 }
 
 /*SOBRE*/
@@ -420,6 +322,7 @@ div .navigation-auto:not(:last-child) {
     box-sizing: border-box;
     border-radius: 0. 6rem;
     background-color: var(--before-color);
+    cursor: pointer;
 }
 
 #cardapio .content h3 {
@@ -497,6 +400,7 @@ div .navigation-auto:not(:last-child) {
     box-sizing: border-box;
     border-radius: 0. 6rem;
     background-color: var(--before-color);
+    cursor: pointer;
 }
 
 #depoimentos .content h3 {
