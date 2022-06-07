@@ -1,24 +1,25 @@
 function openMenu() {
     document.body.classList.add("menu-expanded");
-    document.getElementById("open-menu").style.visibility="hidden";
-    document.getElementById("close-menu").style.visibility="visible";
+    document.getElementById("open-menu").style.visibility = "hidden";
+    document.getElementById("close-menu").style.visibility = "visible";
 }
 
 function closeMenu() {
     document.body.classList.remove("menu-expanded");
-    document.getElementById("close-menu").style.visibility="hidden";
-    document.getElementById("open-menu").style.visibility="visible";
+    document.getElementById("close-menu").style.visibility = "hidden";
+    document.getElementById("open-menu").style.visibility = "visible";
 }
 
+const navigation = document.getElementById("navigation");
+
 function onScroll() {
-    if (window.scrollY > 0) {
+    if (window.scrollY > 10) {
         navigation.classList.add("scroll");
-    } 
-    else {
+    } else {
         navigation.classList.remove("scroll");
     }
-    window.addEventListener("scroll", onScroll);
 }
+window.addEventListener("scroll", onScroll);
 
 ScrollReveal({
     origin: 'top',
