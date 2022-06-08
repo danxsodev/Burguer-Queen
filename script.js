@@ -1,3 +1,14 @@
+const navigation = document.getElementById("navigation");
+
+function onScroll() {
+    if (window.scrollY > 0) {
+        navigation.classList.add("scroll");
+    } else {
+        navigation.classList.remove("scroll");
+    }
+}
+window.addEventListener("scroll", onScroll);
+
 function openMenu() {
     document.body.classList.add("menu-expanded");
     document.getElementById("open-menu").style.visibility = "hidden";
@@ -9,17 +20,6 @@ function closeMenu() {
     document.getElementById("close-menu").style.visibility = "hidden";
     document.getElementById("open-menu").style.visibility = "visible";
 }
-
-const navigation = document.getElementById("navigation");
-
-function onScroll() {
-    if (window.scrollY > 10) {
-        navigation.classList.add("scroll");
-    } else {
-        navigation.classList.remove("scroll");
-    }
-}
-window.addEventListener("scroll", onScroll);
 
 ScrollReveal({
     origin: 'top',
