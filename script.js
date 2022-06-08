@@ -1,6 +1,6 @@
-const navigation = document.getElementById("navigation");
-
 function onScroll() {
+    const navigation = document.getElementById("navigation");
+    
     if (window.scrollY > 0) {
         navigation.classList.add("scroll");
     } else {
