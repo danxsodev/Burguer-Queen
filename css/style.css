@@ -607,15 +607,40 @@ footer {
         padding-inline: 2.4rem;
     }
 
+    /*RESET NAV*/
+    nav #navigation .wrapper * {
+        margin: 0;
+        padding: 0;
+        visibility: initial;
+        display: initial;
+        opacity: initial;
+        flex-direction: initial;
+        position: initial;
+        font-size: initial;
+        font-weight: initial;
+        transform: initial;
+        color: initial;
+        background-color: initial;
+    }
+
     /*NAV*/
-    /*RESET*/
+    nav #navigation .wrapper button #open-menu svg path,
+    nav #navigation .menu  ul li a button #close-menu svg,
+    nav #navigation .menu ul li a .social-links svg {
+        display: none;
+    }
 
-
-    nav#navigation .menu {
+    nav #navigation .menu {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        
+        width: 60%;
     }
+
+    nav #navigation .menu ul {
+        display: flex;
+        gap: 3.2rem;
+    }
+
 
 }
