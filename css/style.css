@@ -1,6 +1,11 @@
 :root {
+    --height-nav: 7.2rem;
+    font-size: 62.5%; /* 1rem = 10 px */
+    
     /*usar variavéis(--variavel) no css quando utilizar hsl para alterar a paleta de cores de maneira facilitada*/
     /*paleta de cores monocromaticas ou paleta de cores diversas usar hsl(hue (cor), saturation (saturação), lightness(brilho));*/
+
+    /*Light Mode*/
     --primary-color: hsl(29, 100%, 25%);
     --secondary-color: hsl(33, 100%, 50%);
     --paragraph-color: hsl(0, 100%, 0%);
@@ -8,8 +13,10 @@
     --before-color: hsl(29, 55%, 90%);
     --button-color: hsl(170, 100%, 30%);
     --button-hover-color: hsl(170, 100%, 15%);
-    --height-nav: 7.2rem;
-    font-size: 62.5%; /* 1rem = 10 px */
+
+    /*Dark Mode*/
+
+
 }
 
 /*GERAL*/
@@ -106,10 +113,10 @@ nav.logo button {
     margin-top: var(--height-nav);
 }
 
-nav.menu,
-nav.menu #close-menu {
+/*nav.menu,
+nav.wrapper .menu #close-menu {
     position: fixed;
-}
+}*/
 
 /*MENU EXPANDED*/
 body.menu-expanded {
@@ -624,22 +631,61 @@ footer {
     }
 
     /*NAV*/
-    nav #navigation .wrapper button #open-menu svg path,
-    nav #navigation .menu  ul li a button #close-menu svg,
-    nav #navigation .menu ul li a .social-links svg {
+    nav#navigation #close-menu,
+    nav#navigation #open-menu,
+    nav#navigation .social-links {
         display: none;
     }
 
-    nav #navigation .menu {
+    nav#navigation .menu ul {
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: 60%;
     }
 
-    nav #navigation .menu ul {
+    nav#navigation .menu ul:nth-child(1) {
         display: flex;
         gap: 3.2rem;
+    }
+
+    nav#navigation .menu ul li a {
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2.1rem;
+        color: var(--primary-color);
+        opacity: 0.5;
+    }
+
+    nav#navigation.scroll .menu ul li a {
+        color: white;
+        opacity: 0.5;
+    }
+
+    nav#navigation.scroll .menu li a {
+        transform: opacity 700ms;
+    }
+    
+    nav#navigation.scroll .menu li a:hover {
+        opacity: 1;
+        font-weight: 700;
+    }
+
+    nav#navigation .menu li a::after {
+        content: "";
+        width: 0%;
+        height: 0.2rem;
+        background-color: var(--primary-color);
+        position: relative;
+        display: block;
+        padding-inline: 0.8rem;
+        left: -0.5rem;
+        transform: width 700ms;
+    }
+
+    nav#navigation.scroll .menu li a::after {
+        content: "";
+        background-color: white;
     }
 
 
