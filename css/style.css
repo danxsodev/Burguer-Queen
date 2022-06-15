@@ -191,7 +191,7 @@ body.menu-expanded .menu {
 
 ul li .social-facebook svg:hover {
     transform:scale(1.5);
-    transition: transform 300ms;
+    transition: transform ease 300ms;
 }
 
 .social-instagram svg {
@@ -201,7 +201,7 @@ ul li .social-facebook svg:hover {
 
 ul li .social-instagram svg:hover {
     transform:scale(1.5);
-    transition: transform 300ms;
+    transition: transform ease 300ms;
 }
 
 .social-whatsapp svg {
@@ -211,7 +211,7 @@ ul li .social-instagram svg:hover {
 
 ul li .social-whatsapp svg:hover {
     transform:scale(1.5);
-    transition: transform 300ms;
+    transition: transform ease 300ms;
 }
 
 body.menu-expanded .logo,
@@ -603,6 +603,12 @@ footer {
 }
 
 /*RESPONSIVO*/
+@media (min-width: 40px)  {
+    nav#navigation .menu-desktop {
+        display: none;
+    }
+}
+
 @media (min-width: 1024px) {
 
     /*GERAL*/
@@ -629,7 +635,7 @@ footer {
     }
 
     /*RESET NAV*/
-    nav #navigation .wrapper * {
+    nav#navigation .wrapper * {
         margin: 0;
         padding: 0;
         visibility: initial;
@@ -656,11 +662,13 @@ footer {
         align-items: center;
         justify-content: space-between;
         width: 60%;
+        
     }
 
     nav#navigation .menu ul:nth-child(1) {
         display: flex;
         gap: 3.2rem;
+        
     }
 
     nav#navigation .menu ul li a {
@@ -731,12 +739,12 @@ footer {
         'C C';
     }
 
-    /*#home.wrapper {
+    #home.wrapper {
         grid-template-columns: 60.5rem 1fr;
         grid-area: 
         'A B'
         'C C';
-    }*/
+    }
 
     #home.col-a {
         text-align: left;
@@ -788,6 +796,7 @@ footer {
     }
 
     #cardapio .cards {
+        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 4rem;
@@ -801,6 +810,7 @@ footer {
 
     /*DEPOIMENTOS*/
     #depoimentos .cards {
+        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 4rem;
@@ -809,7 +819,7 @@ footer {
 
     #depoimentos .card {
         width: 30%;
-        flex-grow: 2;
+        flex-grow: 1;
     }
     
 }
