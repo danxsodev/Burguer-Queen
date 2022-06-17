@@ -91,10 +91,12 @@ nav.logo {
 
 nav button path {
     stroke: var(--primary-color);
+    transition: stroke 300ms;
 }
 
 nav.scroll button path {
     stroke: white;
+    transition: stroke 300ms;
 }
 
 nav button {
@@ -273,17 +275,21 @@ body.menu-expanded button path {
 
 /*SOBRE*/
 #sobre .stats {
-    width: 100%;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: var(--stats-color); 
-    border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
+    padding-block: 4rem;
+    margin-inline: auto;
+    background-color: var(--stats-color); 
+    border-radius: 0.6rem;
     gap: 6rem;
+}
+
+#sobre .stat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #sobre .stat h3 {
@@ -300,6 +306,20 @@ body.menu-expanded button path {
 }
 
 /*CARDAPIO*/
+#cardapio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#cardapio .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 #cardapio header h3 {
     font-size: 1.4rem;
     font-weight: 700;
@@ -323,6 +343,7 @@ body.menu-expanded button path {
     justify-content: center;
     align-items: center;
     gap: 3.2rem;
+    margin-inline: 2rem;
 }
 
 #cardapio .card {
@@ -331,7 +352,7 @@ body.menu-expanded button path {
     background: white;
     border: 1px solid var(--stats-color);
     box-sizing: border-box;
-    border-radius: 0. 6rem;
+    border-radius: 0.6rem;
     background-color: var(--before-color);
     cursor: pointer;
 }
@@ -352,22 +373,20 @@ body.menu-expanded button path {
 }
 
 #cardapio .whatsapp {
-    background-color: var(--button-color);
-    border: none;
-    height: 6.2rem;
     width: 26.3rem;
+    height: 6.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
     border-radius: 4rem;
-    margin-top: 6rem;
-    margin-bottom: 6rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin-block: 6rem;
+    margin-inline: auto;    
+    background-color: var(--button-color);
     color: white;
     font-size: 1.4rem;
     font-weight: 700;
     text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 1.6rem;
     cursor: pointer;
     transition: background 300ms;
@@ -378,6 +397,20 @@ body.menu-expanded button path {
 }
 
 /*DEPOIMENTOS*/
+#depoimentos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#depoimentos .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 #depoimentos header h3 {
     font-size: 1.4rem;
     font-weight: 700;
@@ -395,23 +428,39 @@ body.menu-expanded button path {
     margin-bottom: 6rem;
 }
 
-#depoimentos.cards {
+#depoimentos .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#depoimentos .cards {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 3.2rem;
+    margin-inline: 2rem;
 }
 
 #depoimentos .card {
+    align-items: center;
     padding: 2.4rem;
     text-align: left;
     background: white;
     border: 1px solid var(--stats-color);
     box-sizing: border-box;
-    border-radius: 0. 6rem;
+    border-radius: 0.6rem;
     background-color: var(--before-color);
     cursor: pointer;
+    gap: 0.8rem;
+}
+
+#depoimentos .card svg {
+    width: 2.4rem;
+    height: 2.4rem;
+    gap: 1rem;
 }
 
 #depoimentos .content h3 {
@@ -420,6 +469,7 @@ body.menu-expanded button path {
     font-weight: 700;
     color: var(--paragraph-color);
     text-transform: uppercase;
+    gap: 1rem;
 }
 
 #depoimentos .content p {
@@ -436,6 +486,13 @@ body.menu-expanded button path {
     justify-content: center;
     align-items: center;
 }
+
+#contato .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} 
 
 #contato header h3 {
     font-size: 1.4rem;
@@ -471,23 +528,21 @@ body.menu-expanded button path {
 }
 
 #contato .whatsapp {
-    background-color: var(--button-color);
+    width: 26.3rem;
+    height: 6.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: none;
     border-radius: 4rem;
-    margin-top: 6rem;
-    margin-bottom: 6rem;
-    height: 6.2rem;
-    width: 26.3rem;
+    margin-block: 6rem;
+    margin-inline: auto;    
+    background-color: var(--button-color);
     color: white;
     font-size: 1.4rem;
     font-weight: 700;
     text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 1.6rem;
-    margin-left: auto;
-    margin-right: auto;
     cursor: pointer;
     transition: background 300ms;
 }
@@ -504,7 +559,17 @@ body.menu-expanded button path {
     align-items: center;
 }
 
+#faq .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} 
+
 #faq header h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 1.4rem;
     font-weight: 700;
     line-height: 150%;
@@ -515,6 +580,9 @@ body.menu-expanded button path {
 }
 
 #faq header h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 3rem;
     line-height: 3.9rem;
     color: var(--paragraph-color);
@@ -525,6 +593,7 @@ body.menu-expanded button path {
     display: flex;
     flex-direction: column;
     gap: 3.2rem;
+    margin-inline: 2rem;
 }
 
 #faq .card {
@@ -554,6 +623,7 @@ body.menu-expanded button path {
 
 #faq svg {
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     align-items: center;
     transform: rotate(180deg);
@@ -597,18 +667,13 @@ body.menu-expanded button path {
 
 /*FOOTER*/
 footer {
+    text-align: center;
     background-color: var(--primary-color);
     color: white;
     padding-block: 6rem;
 }
 
 /*RESPONSIVO*/
-@media (min-width: 40px)  {
-    nav#navigation .menu-desktop {
-        display: none;
-    }
-}
-
 @media (min-width: 1024px) {
 
     /*GERAL*/
@@ -661,14 +726,12 @@ footer {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 60%;
-        
+        width: 60%;   
     }
 
     nav#navigation .menu ul:nth-child(1) {
         display: flex;
         gap: 3.2rem;
-        
     }
 
     nav#navigation .menu ul li a {
@@ -676,12 +739,12 @@ footer {
         font-weight: 400;
         line-height: 2.1rem;
         color: var(--primary-color);
-        opacity: 0.5;
+        opacity: 0.8;
     }
 
     nav#navigation.scroll .menu ul li a {
         color: white;
-        opacity: 0.5;
+        opacity: 0.8;
     }
 
     nav#navigation .menu li a {
@@ -739,24 +802,12 @@ footer {
         'C C';
     }
 
-    #home.wrapper {
-        grid-template-columns: 60.5rem 1fr;
-        grid-area: 
-        'A B'
-        'C C';
-    }
-
-    #home.col-a {
-        text-align: left;
-        align-self: center;
-    }
-
     #home h3 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     #home h1 {
-        font-size: 4rem;
+        font-size: 3.8rem;
     }
 
     #home .content p {
@@ -769,32 +820,22 @@ footer {
 
     /*SOBRE*/
     #sobre .stats {
+        width: 100%;
         grid-area: C;
         flex-direction: row;
+        justify-content: center;
         align-items: center;
         padding: 6rem;
         gap: 4rem;
-
     }
 
     #sobre .stats .stat + .stat {
         border-left: 0.1rem solid var(--primary-color);
-        padding: 3rem;
         flex: 1;
+        padding: 2rem;
     }
 
     /*CARDAPIO*/
-    #cardapio .wrapper {
-        align-items: center;
-    }
-
-    #cardapio h2 {
-        font-size: 3rem;
-        line-height: 3.9rem;
-        color: var(--paragraph-color);
-        margin-bottom: 6rem;
-    }
-
     #cardapio .cards {
         display: flex;
         flex-direction: row;
@@ -821,5 +862,5 @@ footer {
         width: 30%;
         flex-grow: 1;
     }
-    
+
 }
