@@ -3,19 +3,26 @@
     font-size: 62.5%; /* 1rem = 10 px */
     
     /*usar variavéis(--variavel) no css quando utilizar hsl para alterar a paleta de cores de maneira facilitada*/
-    /*paleta de cores monocromaticas ou paleta de cores diversas usar hsl(hue (cor), saturation (saturação), lightness(brilho));*/
+    /*paleta de cores monocromaticas ou paleta de cores diversas usar hsl(hue (cor), saturation (saturação), lightness (brilho));*/
 
     /*Light Mode*/
-    --primary-color: hsl(29, 100%, 25%);
-    --secondary-color: hsl(33, 100%, 50%);
-    --paragraph-color: hsl(0, 100%, 0%);
-    --stats-color: hsl(39, 100%, 97%);
-    --before-color: hsl(29, 55%, 90%);
-    --button-color: hsl(170, 100%, 30%);
-    --button-hover-color: hsl(170, 100%, 15%);
+    --primary-color: #803e00;
+    --secondary-color: #ff8c00;
+    --paragraph-color: #000000;
+    --before-color: #f4e5d7;
+    --stats-color: #fffaf0;
+    --card-color: #f4e5d7;
+    --button-color: #009980;
+    --button-hover-color: #004d40;
 
     /*Dark Mode*/
-
+    --primary-color: #ff8c00;
+    --paragraph-color: #e6e6e6;
+    --before-color: #1a1a1a;
+    --stats-color: #545454;
+    --card-color: #333333;
+    --button-color: #009980;
+    --button-hover-color: #004d40;
 
 }
 
@@ -112,6 +119,7 @@ nav.logo button {
     margin-top: var(--height-nav);
 }
 
+
 /*nav.menu,
 nav.wrapper .menu #close-menu {
     position: fixed;
@@ -122,7 +130,7 @@ body.menu-expanded {
     overflow: hidden;
 }
 
-body.menu-expanded > :not(nav) {
+body.menu-expanded >:not(nav) {
     visibility: hidden;
 }
 
@@ -168,7 +176,7 @@ body.menu-expanded .menu {
 }
 
 .menu ul li a {
-    color: white;
+    color: #e6e6e6;
     text-decoration: none;
     transition: background 300ms;
 }
@@ -193,7 +201,7 @@ body.menu-expanded .menu {
 
 ul li .social-facebook svg:hover {
     transform:scale(1.5);
-    transition: transform ease 300ms;
+    transition: transform ease-in-out 300ms;
 }
 
 .social-instagram svg {
@@ -203,7 +211,7 @@ ul li .social-facebook svg:hover {
 
 ul li .social-instagram svg:hover {
     transform:scale(1.5);
-    transition: transform ease 300ms;
+    transition: transform ease-in-out 300ms;
 }
 
 .social-whatsapp svg {
@@ -213,7 +221,7 @@ ul li .social-instagram svg:hover {
 
 ul li .social-whatsapp svg:hover {
     transform:scale(1.5);
-    transition: transform ease 300ms;
+    transition: transform ease-in-out 300ms;
 }
 
 body.menu-expanded .logo,
@@ -224,6 +232,47 @@ body.menu-expanded button {
 
 body.menu-expanded button path {
     stroke: white;
+}
+
+/*MENU EXPANDED BOTÃO LIGHT MODE/DARK MODE*/
+input {
+    visibility: hidden;
+}
+
+label {
+    width: 5.2rem;
+    height: 2.7rem;
+    border-radius: 10rem;
+    position: relative;
+    float: right;
+    text-indent: -9999rem;
+    background-color: gray;
+    cursor: pointer;
+}
+
+label::after {
+    content: '';
+    width: 2rem;
+    height: 2rem;
+    border-radius: 9rem;
+    position: absolute;
+    top: 0.2rem;
+    left: 0.2rem;
+    background-color: white;
+    transition: 300ms;
+}
+
+input:checked + label {
+    background-color: blue;
+}
+
+input:checked + label::after {
+    left: calc(100% - 0.5rem);
+    transform: translateX(-100%);
+}
+
+label:active::after {
+    width: 4rem;
 }
 
 /*HOME*/
@@ -269,8 +318,7 @@ body.menu-expanded button path {
 }
 
 #home .content img {
-    max-width: 80rem;
-    height: 40rem;
+    width: 70%;
 }
 
 /*SOBRE*/
@@ -355,6 +403,7 @@ body.menu-expanded button path {
     border-radius: 0.6rem;
     background-color: var(--before-color);
     cursor: pointer;
+    transition: 300ms ease-in-out;
 }
 
 #cardapio .content h3 {
@@ -455,6 +504,7 @@ body.menu-expanded button path {
     background-color: var(--before-color);
     cursor: pointer;
     gap: 0.8rem;
+    transition: 300ms ease-in-out;
 }
 
 #depoimentos .card svg {
@@ -521,6 +571,7 @@ body.menu-expanded button path {
     display: flex;
     align-items: center;
     gap: 0.8rem;
+    color: var(--paragraph-color);
 }
 
 #contato ul li path {
@@ -549,6 +600,11 @@ body.menu-expanded button path {
 
 #contato .whatsapp:hover {
     background-color: var(--button-hover-color);
+}
+
+#contato .map {
+    width: 70%;
+    margin-block: 3rem;
 }
 
 /*FAQ*/
@@ -789,6 +845,47 @@ footer {
         opacity: 1;
     }
 
+    /*MENU FIXO BOTÃO LIGHT MODE/DARK MODE*/
+    input {
+        visibility: hidden;
+    }
+    
+    label {
+        width: 5.2rem;
+        height: 2.7rem;
+        border-radius: 10rem;
+        position: relative;
+        float: right;
+        text-indent: -9999rem;
+        background-color: gray;
+        cursor: pointer;
+    }
+    
+    label::after {
+        content: '';
+        width: 2rem;
+        height: 2rem;
+        border-radius: 9rem;
+        position: absolute;
+        top: 0.2rem;
+        left: 0.2rem;
+        background-color: white;
+        transition: 300ms;
+    }
+    
+    input:checked + label {
+        background-color: blue;
+    }
+    
+    input:checked + label::after {
+        left: calc(100% - 0.5rem);
+        transform: translateX(-100%);
+    }
+    
+    label:active::after {
+        width: 4rem;
+    }
+
     /*HOME*/
     #home::before {
         height: calc(96% - var(--height-nav));
@@ -814,8 +911,8 @@ footer {
         font-size: 1.8rem;
     }
 
-    #home img {
-        width: 60rem;
+    #home .content img {
+        width: 55%;
     }
 
     /*SOBRE*/
@@ -849,6 +946,36 @@ footer {
         flex-grow: 1;
     }
 
+    #cardapio .card:hover {
+        width: 45%;
+        height: 40%;
+        transform: scale(1.5);
+    }
+
+   #cardapio  .whatsapp {
+        width: 26.3rem;
+        height: 6.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-radius: 4rem;
+        margin-block: 6rem;
+        margin-inline: auto;    
+        background-color: var(--button-color);
+        color: white;
+        font-size: 1.4rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        gap: 1.6rem;
+        cursor: pointer;
+        transition: background 300ms;
+    }
+    
+    #cardapio .whatsapp:hover {
+        background-color: var(--button-hover-color);
+    }
+
     /*DEPOIMENTOS*/
     #depoimentos .cards {
         display: flex;
@@ -861,6 +988,37 @@ footer {
     #depoimentos .card {
         width: 30%;
         flex-grow: 1;
+    }
+
+    #depoimentos .card:hover {
+        width: 25%;
+        height: 20%;
+        transform: scale(1.5);
+    }
+
+    /*CONTATOS*/
+    #contato .whatsapp {
+        width: 26.3rem;
+        height: 6.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-radius: 4rem;
+        margin-block: 6rem;
+        margin-inline: auto;    
+        background-color: var(--button-color);
+        color: white;
+        font-size: 1.4rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        gap: 1.6rem;
+        cursor: pointer;
+        transition: background 300ms;
+    }
+    
+    #contato .whatsapp:hover {
+        background-color: var(--button-hover-color);
     }
 
 }
