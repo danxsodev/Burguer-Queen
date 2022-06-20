@@ -1,5 +1,6 @@
 function inicialize (onload) {
 onScroll()
+changeTheme(theme)
 }
 window.onload
 
@@ -99,7 +100,7 @@ cards.forEach((card) => {
 });
 
 /*Light Mode/Dark Mode*/
-const inputContainer = document.querySelector('input');
+const inputContainer = document.querySelector("input");
 const rootElement = document.documentElement;
 
 const lightTheme = {
@@ -123,14 +124,13 @@ const darkTheme = {
     "--button-hover-color":"#004d40",
 };
 
-
 inputContainer.addEventListener('change', function() {
     const isChecked = inputContainer.checked
 
     if (isChecked) {
-        changeTheme(darkTheme)
-    } else {
-        changeTheme(lightTheme)
+        changeTheme(darkTheme);
+    } else  {
+        changeTheme(lightTheme);
     }
 });
 

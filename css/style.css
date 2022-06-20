@@ -115,13 +115,21 @@ nav button {
     cursor: pointer;
 }
 
-nav.logo button {
+nav .wrapper .logo button {
     margin-top: var(--height-nav);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.wrapper label  {
+    display: none;
 }
 
 
+
 /*nav.menu,
-nav.wrapper .menu #close-menu {
+div.wrapper .menu #close-menu {
     position: fixed;
 }*/
 
@@ -132,6 +140,10 @@ body.menu-expanded {
 
 body.menu-expanded >:not(nav) {
     visibility: hidden;
+}
+
+body.menu-expanded div.wrapper label {
+    display: block;
 }
 
 .menu,
@@ -234,6 +246,10 @@ body.menu-expanded button path {
     stroke: white;
 }
 
+body.menu-expanded label {
+    visibility: visible;
+}
+
 /*MENU EXPANDED BOTÃO LIGHT MODE/DARK MODE*/
 input {
     visibility: hidden;
@@ -259,7 +275,7 @@ label::after {
     top: 0.2rem;
     left: 0.2rem;
     background-color: white;
-    transition: 300ms;
+    transition: 300ms ease-in-out;
 }
 
 input:checked + label {
@@ -730,7 +746,9 @@ footer {
 }
 
 /*RESPONSIVO*/
-@media (min-width: 1024px) {
+
+
+@media (min-width: 769px) {
 
     /*GERAL*/
     body {
@@ -738,7 +756,7 @@ footer {
     }
 
     .wrapper {
-        width: min(112rem, 100%);
+        width: min(102.4rem, 100%);
         margin-inline: auto;
         padding-inline: 2.4rem;
     }
@@ -824,7 +842,6 @@ footer {
         background-color: var(--primary-color);
         position: relative;
         display: block;
-       
         left: -0.5rem;
         transform: width 700ms;
     }
@@ -846,11 +863,11 @@ footer {
     }
 
     /*MENU FIXO BOTÃO LIGHT MODE/DARK MODE*/
-    input {
-        visibility: hidden;
+    div.wrapper input#theme {
+        display: none;
     }
-    
-    label {
+
+    div.wrapper label {
         width: 5.2rem;
         height: 2.7rem;
         border-radius: 10rem;
@@ -859,9 +876,10 @@ footer {
         text-indent: -9999rem;
         background-color: gray;
         cursor: pointer;
+        display: block;
     }
     
-    label::after {
+    div.wrapper label::after {
         content: '';
         width: 2rem;
         height: 2rem;
@@ -870,7 +888,7 @@ footer {
         top: 0.2rem;
         left: 0.2rem;
         background-color: white;
-        transition: 300ms;
+        transition: 300ms ease-in-out;
     }
     
     input:checked + label {
