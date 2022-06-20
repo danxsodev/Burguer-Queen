@@ -401,7 +401,7 @@ label:active::after {
     border: 1px solid var(--stats-color);
     box-sizing: border-box;
     border-radius: 0.6rem;
-    background-color: var(--before-color);
+    background-color: var(--card-color);
     cursor: pointer;
     transition: 300ms ease-in-out;
 }
@@ -501,7 +501,7 @@ label:active::after {
     border: 1px solid var(--stats-color);
     box-sizing: border-box;
     border-radius: 0.6rem;
-    background-color: var(--before-color);
+    background-color: var(--card-color);
     cursor: pointer;
     gap: 0.8rem;
     transition: 300ms ease-in-out;
@@ -659,7 +659,7 @@ label:active::after {
     border: 1px solid var(--stats-color);
     box-sizing: border-box;
     border-radius: 0. 6rem;
-    background-color: var(--before-color);
+    background-color: var(--card-color);
     cursor: pointer;
 }
 
