@@ -11,6 +11,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
     <title>Burguer Queen</title>
+
+    <!--importando o ScrollReveal biblioteca (lib) de JS que anima o scroll-->
+    <script src="https://unpkg.com/scrollreveal" defer></script>
+    <!--importando o JS-->
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -121,11 +126,11 @@
                     <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>                    
             </button>
-
-            <!--botão que ativa e desativa o Light Mode/Dark Mode-->
-            <input type="checkbox" name="theme" id="theme" checked>
-            <label for="theme"></label>
         </div>
+
+        <!--botão que ativa e desativa o Light Mode/Dark Mode-->
+        <input type="checkbox" name="theme" id="theme" checked>
+        <label for="theme"></label>
     </nav>
 
     <section id="home">
@@ -179,75 +184,75 @@
             <div class="content">
                 <div class="cards">
                     <div class="card">
-                        <!--svg do lanche-->
-                        <h3>Lanche X</h3>
-                        <p>Ingredientes: Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum e Lorem ipsum.</p>
+                        <img src="./imgs/Burguer Classic.jpeg" alt="Lanche que acompanha pão, hamburguer de 150g, rodelas de tomate, mussarela, presunto e ovo.">
+                        <h3>Burguer Classic</h3>
+                        <p>Ingredientes: pão, hamburguer de 150g, rodelas de tomate, mussarela, presunto e ovo.</p>
                     </div>
 
                     <div class="card">
-                        <!--svg do lanche-->
-                        <h3>Lanche X</h3>
-                        <p>Ingredientes: Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum e Lorem ipsum.</p>
+                        <img src="./imgs/Burguer Mexicano.jpeg" alt="Lanche que acompanha pão, hamburguer de 150g, guacamole, rodelas cebola roxa e doritos.">
+                        <h3>Burguer Mexicano</h3>
+                        <p>Ingredientes: pão, hamburguer de 150g, guacamole, rodelas de cebola roxa e doritos.</p>
                     </div>
 
                     <div class="card">
-                        <!--svg do lanche-->
-                        <h3>Lanche X</h3>
-                        <p>Ingredientes: Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum e Lorem ipsum.</p>
+                        <img src="./imgs/Burguer Salad.jpeg" alt="Lanche que acompanha pão, hamburguer de 200g, alface, rodelas de tomate, rodelas de cebola roxa e molho especial.">
+                        <h3>Burguer Salad</h3>
+                        <p>Ingredientes: pão, hamburguer de 200g, alface, rodelas de tomate, rodelas de cebola roxa e molho especial.</p>
                     </div>
 
                     <div class="card">
-                        <!--svg do lanche-->
-                        <h3>Lanche X</h3>
-                        <p>Ingredientes: Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum e Lorem ipsum.</p>
+                        <img src="./imgs/Double Burguer Bacon.jpeg" alt="Lanche que acompanha pão, dois hamburguers de 150g, uma fatia de queijo cheddar, tiras de bacon e rodelas de picles.">
+                        <h3>Double Burguer Bacon</h3>
+                        <p>Ingredientes: pão, dois hamburguers de 150g, uma fatia de queijo cheddar, tiras de bacon e rodelas de picles.</p>
                     </div>
 
                     <div class="card">
-                        <!--svg do lanche-->
-                        <h3>Lanche X</h3>
-                        <p>Ingredientes: Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum e Lorem ipsum.</p>
+                        <img src="./imgs/Double Burguer Crispy.jpeg" alt="Lanche que acompanha pão, dois hamburguers de 150g, quatro fatias de queijo cheddar e rodelas de cebola crispy.">
+                        <h3>Double Burguer Crispy</h3>
+                        <p>Ingredientes: pão, dois hamburguers de 150g, quatro fatias de queijo cheddar e rodelas de cebola crispy.</p>
                     </div>
 
                     <div class="card">
-                        <!--svg do lanche-->
-                        <h3>Lanche X</h3>
-                        <p>Ingredientes: Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum e Lorem ipsum.</p>
+                        <img src="./imgs/Burguer Classic.jpeg" alt="Lanche que acompanha pão, hamburguer de 150g, rodelas de tomate, mussarela, presunto e ovo.">
+                        <h3>Burguer Classic</h3>
+                        <p>Ingredientes: pão, hamburguer de 150g, rodelas de tomate, mussarela, presunto e ovo.</p>
                     </div>
 
                     <div class="card">
-                        <!--svg do lanche-->
-                        <h3>Lanche X</h3>
-                        <p>Ingredientes: Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum e Lorem ipsum.</p>
+                        <img src="./imgs/Burguer Mexicano.jpeg" alt="Lanche que acompanha pão, hamburguer de 150g, guacamole, rodelas cebola roxa e doritos.">
+                        <h3>Burguer Mexicano</h3>
+                        <p>Ingredientes: pão, hamburguer de 150g, guacamole, rodelas de cebola roxa e doritos.</p>
                     </div>
 
                     <div class="card">
-                        <!--svg do lanche-->
-                        <h3>Lanche X</h3>
-                        <p>Ingredientes: Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum e Lorem ipsum.</p>
+                        <img src="./imgs/Burguer Salad.jpeg" alt="Lanche que acompanha pão, hamburguer de 200g, alface, rodelas de tomate, rodelas de cebola roxa e molho especial.">
+                        <h3>Burguer Salad</h3>
+                        <p>Ingredientes: pão, hamburguer de 200g, alface, rodelas de tomate, rodelas de cebola roxa e molho especial.</p>
                     </div>
 
                     <div class="card">
-                        <!--svg do lanche-->
-                        <h3>Lanche X</h3>
-                        <p>Ingredientes: Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum e Lorem ipsum.</p>
+                        <img src="./imgs/Double Burguer Bacon.jpeg" alt="Lanche que acompanha pão, dois hamburguers de 150g, uma fatia de queijo cheddar, tiras de bacon e rodelas de picles.">
+                        <h3>Double Burguer Bacon</h3>
+                        <p>Ingredientes: pão, dois hamburguers de 150g, uma fatia de queijo cheddar, tiras de bacon e rodelas de picles.</p>
                     </div>
 
                     <div class="card">
-                        <!--svg do lanche-->
-                        <h3>Lanche X</h3>
-                        <p>Ingredientes: Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum e Lorem ipsum.</p>
+                        <img src="./imgs/Double Burguer Crispy.jpeg" alt="Lanche que acompanha pão, dois hamburguers de 150g, quatro fatias de queijo cheddar e rodelas de cebola crispy.">
+                        <h3>Double Burguer Crispy</h3>
+                        <p>Ingredientes: pão, dois hamburguers de 150g, quatro fatias de queijo cheddar e rodelas de cebola crispy.</p>
                     </div>
 
                     <div class="card">
-                        <!--svg do lanche-->
-                        <h3>Lanche X</h3>
-                        <p>Ingredientes: Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum e Lorem ipsum.</p>
+                        <img src="./imgs/Burguer Salad.jpeg" alt="Lanche que acompanha pão, hamburguer de 200g, alface, rodelas de tomate, rodelas de cebola roxa e molho especial.">
+                        <h3>Burguer Salad</h3>
+                        <p>Ingredientes: pão, hamburguer de 200g, alface, rodelas de tomate, rodelas de cebola roxa e molho especial.</p>
                     </div>
 
                     <div class="card">
-                        <!--svg do lanche-->
-                        <h3>Lanche X</h3>
-                        <p>Ingredientes: Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum e Lorem ipsum.</p>
+                        <img src="./imgs/Burguer Mexicano.jpeg" alt="Lanche que acompanha pão, hamburguer de 150g, guacamole, rodelas cebola roxa e doritos.">
+                        <h3>Burguer Mexicano</h3>
+                        <p>Ingredientes: pão, hamburguer de 150g, guacamole, rodelas de cebola roxa e doritos.</p>
                     </div>
                 </div>
             </div>
@@ -276,8 +281,8 @@
                         <svg 
                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><g xmlns="http://www.w3.org/2000/svg" id="user" data-name="user"><path d="M21,24H19V18.957A2.96,2.96,0,0,0,16.043,16H7.957A2.96,2.96,0,0,0,5,18.957V24H3V18.957A4.963,4.963,0,0,1,7.957,14h8.086A4.963,4.963,0,0,1,21,18.957Z" fill="#ff8c00"/><path d="M12,12a6,6,0,1,1,6-6A6.006,6.006,0,0,1,12,12ZM12,2a4,4,0,1,0,4,4A4,4,0,0,0,12,2Z" fill="#ff8c00"/></g></g>
                         </svg>
-                        <h3>Nome cliente</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus explicabo nisi non, corporis officia laudantium nam sapiente. Quos officiis placeat in alias tenetur perferendis, odit nulla mollitia nemo, reprehenderit quas.</p>
+                        <h3>Miguel</h3>
+                        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus explicabo nisi non, corporis officia laudantium nam sapiente. Quos officiis placeat in alias tenetur perferendis, odit nulla mollitia nemo, reprehenderit quas."</p>
                     </div>
 
                     <div class="card">
@@ -285,8 +290,8 @@
                         <svg 
                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><g xmlns="http://www.w3.org/2000/svg" id="user" data-name="user"><path d="M21,24H19V18.957A2.96,2.96,0,0,0,16.043,16H7.957A2.96,2.96,0,0,0,5,18.957V24H3V18.957A4.963,4.963,0,0,1,7.957,14h8.086A4.963,4.963,0,0,1,21,18.957Z" fill="#ff8c00"/><path d="M12,12a6,6,0,1,1,6-6A6.006,6.006,0,0,1,12,12ZM12,2a4,4,0,1,0,4,4A4,4,0,0,0,12,2Z" fill="#ff8c00"/></g></g>
                         </svg>
-                        <h3>Nome cliente</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus explicabo nisi non, corporis officia laudantium nam sapiente. Quos officiis placeat in alias tenetur perferendis, odit nulla mollitia nemo, reprehenderit quas.</p>
+                        <h3>Helena</h3>
+                        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus explicabo nisi non, corporis officia laudantium nam sapiente. Quos officiis placeat in alias tenetur perferendis, odit nulla mollitia nemo, reprehenderit quas."</p>
                     </div>
 
                     <div class="card">
@@ -294,8 +299,8 @@
                         <svg 
                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><g xmlns="http://www.w3.org/2000/svg" id="user" data-name="user"><path d="M21,24H19V18.957A2.96,2.96,0,0,0,16.043,16H7.957A2.96,2.96,0,0,0,5,18.957V24H3V18.957A4.963,4.963,0,0,1,7.957,14h8.086A4.963,4.963,0,0,1,21,18.957Z" fill="#ff8c00"/><path d="M12,12a6,6,0,1,1,6-6A6.006,6.006,0,0,1,12,12ZM12,2a4,4,0,1,0,4,4A4,4,0,0,0,12,2Z" fill="#ff8c00"/></g></g>
                         </svg>
-                        <h3>Nome cliente</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus explicabo nisi non, corporis officia laudantium nam sapiente. Quos officiis placeat in alias tenetur perferendis, odit nulla mollitia nemo, reprehenderit quas.</p>
+                        <h3>Arthur</h3>
+                        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus explicabo nisi non, corporis officia laudantium nam sapiente. Quos officiis placeat in alias tenetur perferendis, odit nulla mollitia nemo, reprehenderit quas."</p>
                     </div>
 
                     <div class="card">
@@ -303,8 +308,8 @@
                         <svg 
                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><g xmlns="http://www.w3.org/2000/svg" id="user" data-name="user"><path d="M21,24H19V18.957A2.96,2.96,0,0,0,16.043,16H7.957A2.96,2.96,0,0,0,5,18.957V24H3V18.957A4.963,4.963,0,0,1,7.957,14h8.086A4.963,4.963,0,0,1,21,18.957Z" fill="#ff8c00"/><path d="M12,12a6,6,0,1,1,6-6A6.006,6.006,0,0,1,12,12ZM12,2a4,4,0,1,0,4,4A4,4,0,0,0,12,2Z" fill="#ff8c00"/></g></g>
                         </svg>
-                        <h3>Nome cliente</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus explicabo nisi non, corporis officia laudantium nam sapiente. Quos officiis placeat in alias tenetur perferendis, odit nulla mollitia nemo, reprehenderit quas.</p>
+                        <h3>Alice</h3>
+                        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus explicabo nisi non, corporis officia laudantium nam sapiente. Quos officiis placeat in alias tenetur perferendis, odit nulla mollitia nemo, reprehenderit quas."</p>
                     </div>
 
                     <div class="card">
@@ -312,8 +317,8 @@
                         <svg 
                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><g xmlns="http://www.w3.org/2000/svg" id="user" data-name="user"><path d="M21,24H19V18.957A2.96,2.96,0,0,0,16.043,16H7.957A2.96,2.96,0,0,0,5,18.957V24H3V18.957A4.963,4.963,0,0,1,7.957,14h8.086A4.963,4.963,0,0,1,21,18.957Z" fill="#ff8c00"/><path d="M12,12a6,6,0,1,1,6-6A6.006,6.006,0,0,1,12,12ZM12,2a4,4,0,1,0,4,4A4,4,0,0,0,12,2Z" fill="#ff8c00"/></g></g>
                         </svg>
-                        <h3>Nome cliente</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus explicabo nisi non, corporis officia laudantium nam sapiente. Quos officiis placeat in alias tenetur perferendis, odit nulla mollitia nemo, reprehenderit quas.</p>
+                        <h3>Enzo</h3>
+                        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus explicabo nisi non, corporis officia laudantium nam sapiente. Quos officiis placeat in alias tenetur perferendis, odit nulla mollitia nemo, reprehenderit quas."</p>
                     </div>
 
                     <div class="card">
@@ -321,8 +326,8 @@
                         <svg 
                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><g xmlns="http://www.w3.org/2000/svg" id="user" data-name="user"><path d="M21,24H19V18.957A2.96,2.96,0,0,0,16.043,16H7.957A2.96,2.96,0,0,0,5,18.957V24H3V18.957A4.963,4.963,0,0,1,7.957,14h8.086A4.963,4.963,0,0,1,21,18.957Z" fill="#ff8c00"/><path d="M12,12a6,6,0,1,1,6-6A6.006,6.006,0,0,1,12,12ZM12,2a4,4,0,1,0,4,4A4,4,0,0,0,12,2Z" fill="#ff8c00"/></g></g>
                         </svg>
-                        <h3>Nome cliente</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus explicabo nisi non, corporis officia laudantium nam sapiente. Quos officiis placeat in alias tenetur perferendis, odit nulla mollitia nemo, reprehenderit quas.</p>
+                        <h3>Sophia</h3>
+                        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus explicabo nisi non, corporis officia laudantium nam sapiente. Quos officiis placeat in alias tenetur perferendis, odit nulla mollitia nemo, reprehenderit quas."</p>
                     </div>
                 </div>
             </div>
@@ -478,11 +483,6 @@
         </ul>
     </footer>
 
-    <!--importando o ScrollReveal biblioteca (lib) de JS que anima o scroll-->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!--importando o JS-->
-    <script src="script.js"></script>
 
 </body>
 </html>
