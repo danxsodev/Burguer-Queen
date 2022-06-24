@@ -105,7 +105,7 @@ const rootElement = document.documentElement;
 
 const lightTheme = {
     "--primary-color": "#803e00",
-    "--secondary-color":"#ff8c00",
+    "--secondary-color":"#f96c1f",
     "--paragraph-color":"#000000",
     "--before-color":"#f4e5d7",
     "--stats-color":"#fffaf0",
@@ -115,10 +115,10 @@ const lightTheme = {
 };
 
 const darkTheme = {
-    "--primary-color":"#ff8c00",
+    "--primary-color":"#f96c1f",
     "--paragraph-color":"#e6e6e6",
     "--before-color":"#1a1a1a",
-    "--stats-color":"#545454",
+    "--stats-color":"#4d4d4d",
     "--card-color":"#333333",
     "--button-color":"#009980",
     "--button-hover-color":"#004d40",
