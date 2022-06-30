@@ -7,7 +7,7 @@
 
     /*Light Mode*/
     --primary-color: #803e00;
-    --secondary-color: #f96c1f;
+    --secondary-color: #ff6600;
     --paragraph-color: #000000;
     --before-color: #f4e5d7;
     --stats-color: #fffaf0;
@@ -16,7 +16,7 @@
     --button-hover-color: #004d40;
 
     /*Dark Mode*/
-    --primary-color: #f96c1f;
+    --primary-color: #ff6600;
     --paragraph-color: #e6e6e6;
     --before-color: #1a1a1a;
     --stats-color: #4d4d4d;
@@ -977,13 +977,13 @@ footer {
     }
 
     #cardapio .card {
-        width: 40%;
+        width: 30%;
         flex-grow: 1;
     }
 
     #cardapio .card:hover {
-        width: 45%;
-        height: 40%;
+        width: 25%;
+        height: 20%;
         transform: scale(1.5);
     }
 

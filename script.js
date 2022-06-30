@@ -105,7 +105,7 @@ const rootElement = document.documentElement;
 
 const lightTheme = {
     "--primary-color": "#803e00",
-    "--secondary-color":"#f96c1f",
+    "--secondary-color":"#ff6600",
     "--paragraph-color":"#000000",
     "--before-color":"#f4e5d7",
     "--stats-color":"#fffaf0",
@@ -115,7 +115,7 @@ const lightTheme = {
 };
 
 const darkTheme = {
-    "--primary-color":"#f96c1f",
+    "--primary-color":"#ff6600",
     "--paragraph-color":"#e6e6e6",
     "--before-color":"#1a1a1a",
     "--stats-color":"#4d4d4d",
