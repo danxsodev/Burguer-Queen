@@ -1,5 +1,6 @@
 function inicialize (onload) {
 onScroll()
+ScrollReveal()
 }
 window.onload
 
@@ -46,6 +47,7 @@ ScrollReveal({
 #cardapio,
 #cardapio .wrapper, 
 #cardapio .card,
+#cardapio .card img,
 .whatsapp,
 #depoimentos,
 #depoimentos .wrapper, 
@@ -77,6 +79,7 @@ ScrollReveal({
 #depoimentos .wrapper, 
 #depoimentos,
 .whatsapp,
+#cardapio .card img,
 #cardapio .card,
 #cardapio .wrapper, 
 #cardapio,
@@ -99,7 +102,7 @@ cards.forEach((card) => {
 });
 
 /*Light Mode/Dark Mode*/
-const inputContainer = document.querySelector("input");
+const inputContainer = document.getElementById("theme");
 const rootElement = document.documentElement;
 
 const lightTheme = {
