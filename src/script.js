@@ -32,9 +32,9 @@ function closeMenu() {
 
 /*ScrollReveal animando o scroll de cima para baixo*/
 ScrollReveal({
-    origin: 'top',
+    origin: 'left',
     distance: '30px',
-    duration: 900,
+    duration: 700,
     reset: true
 }).reveal(`#navigation,
 #home,
@@ -65,7 +65,7 @@ ScrollReveal({
 ScrollReveal({
     origin: 'bottom',
     distance: '30px',
-    duration: 900,
+    duration: 700,
     reset: true
 }).reveal(`#rodape,
 #faq .card,
@@ -106,24 +106,23 @@ const inputContainer = document.getElementById("theme");
 const rootElement = document.documentElement;
 
 const lightTheme = {
-    "--primary-color": "#803e00",
-    "--secondary-color":"#ff6600",
-    "--paragraph-color":"#000000",
+    "--primary-color": "#662b00",
+    "--paragraph-color":"#1a1a1a",
     "--before-color":"#f4e5d7",
     "--stats-color":"#fffaf0",
     "--card-color": "#f4e5d7",
-    "--button-color":"#009980",
-    "--button-hover-color":"#004d40", 
+    "--button-color":"#128c7e",
+    "--button-hover-color":"#0c5a51", 
 };
 
 const darkTheme = {
-    "--primary-color":"#ff6600",
+    "--primary-color":"#ff831a",
     "--paragraph-color":"#e6e6e6",
     "--before-color":"#1a1a1a",
-    "--stats-color":"#4d4d4d",
+    "--stats-color":"#262626",
     "--card-color":"#333333",
-    "--button-color":"#009980",
-    "--button-hover-color":"#004d40",
+    "--button-color":"#128c7e",
+    "--button-hover-color":"#0c5a51",
 };
 
 inputContainer.addEventListener("change", function() {

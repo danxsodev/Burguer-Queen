@@ -6,23 +6,22 @@
     /*paleta de cores monocromaticas ou paleta de cores diversas usar hsl(hue (cor), saturation (saturação), lightness (brilho));*/
 
     /*Light Mode*/
-    --primary-color: #803e00;
-    --secondary-color: #ff6600;
-    --paragraph-color: #000000;
+    --primary-color: #662b00;
+    --paragraph-color: #1a1a1a;
     --before-color: #f4e5d7;
     --stats-color: #fffaf0;
     --card-color: #f4e5d7;
-    --button-color: #009980;
-    --button-hover-color: #004d40;
+    --button-color: #128c7e;
+    --button-hover-color: #0c5a51;
 
     /*Dark Mode
-    --primary-color: #ff6600;
+    --primary-color: #ff831a;
     --paragraph-color: #e6e6e6;
     --before-color: #1a1a1a;
-    --stats-color: #4d4d4d;
+    --stats-color: #262626;
     --card-color: #333333;
-    --button-color: #009980;
-    --button-hover-color: #004d40;*/
+    --button-color: #128c7e;
+    --button-hover-color: #0c5a51;*/
 
 }
 
@@ -318,7 +317,7 @@ label:active::after {
     font-weight: 700;
     line-height: 150%;
     letter-spacing: 0.08rem;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     text-transform: uppercase;
     margin-bottom: 1.6rem;
 }
@@ -394,7 +393,7 @@ label:active::after {
     font-weight: 700;
     line-height: 150%;
     letter-spacing: 0.08rem;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     text-transform: uppercase;
     margin-bottom: 1.6rem;
 }
@@ -492,7 +491,7 @@ label:active::after {
     font-weight: 700;
     line-height: 150%;
     letter-spacing: 0.08rem;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     text-transform: uppercase;
     margin-bottom: 1.6rem;
 }
@@ -538,6 +537,7 @@ label:active::after {
     width: 2.4rem;
     height: 2.4rem;
     gap: 1rem;
+    fill: var(--primary-color);
 }
 
 #depoimentos .content h3 {
@@ -576,7 +576,7 @@ label:active::after {
     font-weight: 700;
     line-height: 150%;
     letter-spacing: 0.08rem;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     text-transform: uppercase;
     margin-bottom: 1.6rem;
 }
@@ -602,7 +602,7 @@ label:active::after {
 }
 
 #contato ul li path {
-    stroke: var(--secondary-color);
+    stroke: var(--primary-color);
 }
 
 #contato .whatsapp {
@@ -657,7 +657,7 @@ label:active::after {
     font-weight: 700;
     line-height: 150%;
     letter-spacing: 0.08rem;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     text-transform: uppercase;
     margin-bottom: 1.6rem;
 }
