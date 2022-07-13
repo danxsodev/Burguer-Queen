@@ -1,17 +1,18 @@
 <h1>Burguer-Queen</h1>
-
+<br>
 Aplicação desenvolvida com foco em praticar conceitos como: 
-
+<br>
 - Usabilidade;
 - Acessibilidade;
 - Portabilidade (Responsivo);
-
+<br>
 Tecnologias e Conceitos aplicados:
+<br>
 - HTML:
 - HTML Semântico;
 - SEO;
 - Acessibilidade: atributo aria e alt nas imagens.
-
+<br>
 - CSS: 
 - Box Model;
 - Unidades CSS: auto, %(porcentagem) e rem;
@@ -24,7 +25,7 @@ Tecnologias e Conceitos aplicados:
 - Pseudo-elementos;
 - Pseudo-classes;
 - Animações e transições.
-
+<br>
 - JavaScript:
 - Tipos de dados primitivos;
 - Variavéis (const e let);
