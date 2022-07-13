@@ -1,6 +1,6 @@
 function inicialize (onload) {
-onScroll()
-ScrollReveal()
+onScroll();
+ScrollReveal();
 }
 window.onload
 
@@ -116,9 +116,9 @@ const lightTheme = {
 };
 
 const darkTheme = {
-    "--primary-color":"#ff831a",
+    "--primary-color":"#f48125",
     "--paragraph-color":"#e6e6e6",
-    "--before-color":"#1a1a1a",
+    "--before-color":"#121212",
     "--stats-color":"#262626",
     "--card-color":"#333333",
     "--button-color":"#128c7e",
