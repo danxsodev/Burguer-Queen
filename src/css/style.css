@@ -984,10 +984,11 @@ footer {
     #cardapio .card:hover {
         width: 25%;
         height: 20%;
-        transform: scale(1.5);
+        transform: scale(1.05);
+        transition: transform 300ms;
     }
 
-   #cardapio  .whatsapp {
+    #cardapio .whatsapp {
         width: 26.3rem;
         height: 6.2rem;
         display: flex;
@@ -1028,7 +1029,8 @@ footer {
     #depoimentos .card:hover {
         width: 25%;
         height: 20%;
-        transform: scale(1.5);
+        transform: scale(1.05);
+        transition: transform 300ms;
     }
 
     /*CONTATOS*/
