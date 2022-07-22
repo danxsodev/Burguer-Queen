@@ -7,6 +7,7 @@
 
     /*Light Mode*/
     --primary-color: #662b00;
+    --secondary-color: #612b05;
     --paragraph-color: #1a1a1a;
     --before-color: #f4e5d7;
     --stats-color: #fffaf0;
@@ -15,11 +16,12 @@
     --button-hover-color: #0c5a51;
 
     /*Dark Mode
-    --primary-color: #f48125;
+    --primary-color: #f46825;
+    --secondary-color: #f48125;
     --paragraph-color: #e6e6e6;
     --before-color: #121212;
     --stats-color: #262626;
-    --card-color: #333333;
+    --card-color: #262626;
     --button-color: #128c7e;
     --button-hover-color: #0c5a51;*/
 
@@ -361,7 +363,7 @@ label:active::after {
 
 #sobre .stat h3 {
     font-size: 4.8rem;
-    color: var(--primary-color); 
+    color: var(--secondary-color); 
     line-height: 130%;
     margin-bottom: 0.4rem;
 }
@@ -537,7 +539,7 @@ label:active::after {
     width: 2.4rem;
     height: 2.4rem;
     gap: 1.6rem;
-    fill: var(--primary-color);
+    fill: var(--secondary-color);
 }
 
 #depoimentos .content h3 {
@@ -962,7 +964,7 @@ footer {
     }
 
     #sobre .stats .stat + .stat {
-        border-left: 0.1rem solid var(--primary-color);
+        border-left: 0.1rem solid var(--secondary-color);
         flex: 1;
         padding: 2rem;
     }
