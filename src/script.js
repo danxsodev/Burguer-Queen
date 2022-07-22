@@ -2,7 +2,7 @@ function inicialize (onload) {
 onScroll();
 ScrollReveal();
 }
-window.onload
+window.addEventListener("load", inicialize);
 
 /*FUNÇÃO QUE ADICIONA E REMOVE O MENU FIXO AO SCROLLAR*/
 function onScroll() {
@@ -132,8 +132,13 @@ inputContainer.addEventListener("change", function() {
 
     if (isChecked) {
         changeTheme(darkTheme);
+        inputContainer.setAttribute("aria-checked", "true");
+        inputContainer.setAttribute("aria-label", "dark mode ativado");
+
     } else  {
         changeTheme(lightTheme);
+        inputContainer.setAttribute("aria-checked", "false");
+        inputContainer.setAttribute("aria-label", "light mode ativado");
     }
 });
 
