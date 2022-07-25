@@ -30,12 +30,12 @@ function closeMenu() {
     document.getElementById("open-menu").style.visibility = "visible";
 }
 
-/*ScrollReveal animando o scroll de cima para baixo*/
+/*ScrollReveal animando o scroll da esquerda para direita*/
 ScrollReveal({
     origin: 'left',
-    distance: '30px',
-    duration: 700,
-    reset: true
+    distance: '100px',
+    duration: '800',
+    reset: 'true'
 }).reveal(`#navigation,
 #home,
 #home .wrapper, 
@@ -59,38 +59,7 @@ ScrollReveal({
 #faq,
 #faq .wrapper,
 #faq .card,
-#rodape`)
-
-/*ScrollReveal animando o scroll debaixo para cima*/
-ScrollReveal({
-    origin: 'bottom',
-    distance: '30px',
-    duration: 700,
-    reset: true
-}).reveal(`#rodape,
-#faq .card,
-#faq .wrapper,
-#faq,
-#contato .map,
-#contato .content,
-#contato .wrapper,
-#contato,
-#depoimentos .card,
-#depoimentos .wrapper, 
-#depoimentos,
-.whatsapp,
-#cardapio .card img,
-#cardapio .card,
-#cardapio .wrapper, 
-#cardapio,
-#sobre .stat,
-#sobre .wrapper, 
-#sobre,
-#home img, 
-#home .content, 
-#home .wrapper, 
-#home,
-#navigation`)
+#rodape`);
 
 /*FAQ*/
 const cards = document.querySelectorAll(".card");
