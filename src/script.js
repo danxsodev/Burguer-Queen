@@ -35,6 +35,7 @@ ScrollReveal({
     origin: 'left',
     distance: '100px',
     duration: '800',
+    delay: '300',
     reset: 'true'
 }).reveal(`#navigation,
 #home,
@@ -78,9 +79,11 @@ const lightTheme = {
     "--primary-color": "#662b00",
     "--secondary-color": "#612b05",
     "--paragraph-color":"#1a1a1a",
+    "--menu-hover-color":"#aa4c09",
     "--before-color":"#f4e5d7",
     "--stats-color":"#fffaf0",
     "--card-color": "#f4e5d7",
+    "--card-hover-color":"#aa4c09",
     "--button-color":"#128c7e",
     "--button-hover-color":"#0c5a51", 
 };
@@ -89,9 +92,11 @@ const darkTheme = {
     "--primary-color":"#f46825",
     "--secondary-color": "#f48125",
     "--paragraph-color":"#e6e6e6",
+    "--menu-hover-color":"#f5903d",
     "--before-color":"#121212",
     "--stats-color":"#262626",
     "--card-color":"#262626",
+    "--card-hover-color":"#f5903d",
     "--button-color":"#128c7e",
     "--button-hover-color":"#0c5a51",
 };

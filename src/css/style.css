@@ -9,9 +9,11 @@
     --primary-color: #662b00;
     --secondary-color: #612b05;
     --paragraph-color: #1a1a1a;
+    --menu-hover-color: #aa4c09;
     --before-color: #f4e5d7;
     --stats-color: #fffaf0;
     --card-color: #f4e5d7;
+    --card-hover-color: #aa4c09;
     --button-color: #128c7e;
     --button-hover-color: #0c5a51;
 
@@ -19,9 +21,11 @@
     --primary-color: #f46825;
     --secondary-color: #f48125;
     --paragraph-color: #e6e6e6;
+    --menu-hover-color: #f5903d;
     --before-color: #121212;
     --stats-color: #262626;
     --card-color: #262626;
+    --card-hover-color: #f5903d;
     --button-color: #128c7e;
     --button-hover-color: #0c5a51;*/
 
@@ -197,7 +201,7 @@ body.menu-expanded .menu {
 }
 
 .menu ul li a:hover {
-    text-shadow: 0.1em 0.1em 0.6em hsla(33, 100%, 50%, 0.75);
+    text-shadow: 0.1em 0.1em 0.5em var(--menu-hover-color);
 }
 
 .social-links {
@@ -712,13 +716,13 @@ label:active::after {
     flex-direction: column;
     align-items: center;
     transform: rotate(180deg);
-    transition: transform 700ms ease-in;
+    transition: transform 250ms ease-in;
 }
 
 #faq .resposta {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 700ms ease;
+    transition: max-height 300ms ease;
 }
 
 #faq .resposta p {
@@ -731,12 +735,12 @@ label:active::after {
 
 #faq .card.active .resposta {
     max-height: 30rem;
-    animation: fade 400ms ease-in-out;
+    animation: fade 300ms ease-in-out;
 }
 
 #faq .card.active svg {
     transform: rotate(0deg);
-    transition: transform 700ms ease-in;
+    transition: transform 250ms ease-in;
 }
 
 @keyframes fade {
@@ -984,9 +988,7 @@ footer {
     }
 
     #cardapio .card:hover {
-        width: 25%;
-        height: 20%;
-        transform: scale(1.05);
+        border: 0.3rem solid var(--card-hover-color);
         transition: transform 300ms;
     }
 
@@ -1029,9 +1031,7 @@ footer {
     }
 
     #depoimentos .card:hover {
-        width: 25%;
-        height: 20%;
-        transform: scale(1.05);
+        border: 0.3rem solid var(--card-hover-color);
         transition: transform 300ms;
     }
 
