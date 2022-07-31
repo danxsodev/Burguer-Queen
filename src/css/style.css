@@ -131,11 +131,6 @@ nav label  {
     display: none;
 }
 
-/*nav.menu,
-div.wrapper .menu #close-menu {
-    position: fixed;
-}*/
-
 /*MENU EXPANDED*/
 body.menu-expanded {
     overflow: hidden;
@@ -451,6 +446,14 @@ label:active::after {
     line-height: 150%;
     font-weight: 400;
     color: var(--paragraph-color);
+}
+
+#cardapio .content .price h4 {
+    font-size: 1.8rem;
+    line-height: 150%;
+    font-weight: 700;
+    color: var(--paragraph-color);
+    gap: 1.6rem;
 }
 
 #cardapio .whatsapp {
