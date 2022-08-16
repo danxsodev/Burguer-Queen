@@ -10,36 +10,47 @@
 
 <h3>Tecnologias</h3>
 <p>Esse projeto foi desenvolvido com as seguintes tecnologias:</p>
-- HTML;
-- CSS;
-- JS.
 
-<h3>Conceitos aplicados nesse projeto</h3>
-- HTML:
-SEO;
-HTML Semântico;
-Acessibilidade: atributo aria, role e alt nas imagens.
+<ul> 
+    <li>HTML;</li>
+    <li>CSS;</li>
+    <li>JS.</li>
+</ul> 
 
-- CSS: 
-Box Model;
-Unidades CSS: auto, %(porcentagem) e rem;
-Specificity;
-Variavéis CSS;
-Layout;
-Flexbox;
-Grid;
-Media Queries (Responsivo);
-Pseudo-elementos;
-Pseudo-classes;
-Animações e transições.
+<h3>Conceitos das Tecnologias que foram aplicados nesse projeto</h3>
 
-- JavaScript:
-Tipos de dados primitivos;
-Variavéis (const e let);
-Condicionais;
-Laço de repetição;
-Programação Orientada a Objeto (POO);
-Métodos;
-Array;
-Consumo de biblioteca (lib) de terceiros: ScrollReveal;
-Manipulação de DOM (Document Object Model).
+<ul>
+    <li>HTML:</li>
+    <li>SEO;</li>
+    <li>HTML Semântico;</li>
+    <li>Acessibilidade: atributo aria, role e alt nas imagens.</li>
+</ul>
+
+<ul>
+    <li>CSS:</li>
+    <li>Box Model;</li>
+    <li>Unidades CSS: auto, %(porcentagem) e rem;</li>
+    <li>Specificity;</li>
+    <li>Variavéis CSS;</li>
+    <li>Layout;</li>
+    <li>Flexbox;</li>
+    <li>Grid;</li>
+    <li>Media Queries (Responsivo);</li>
+    <li>Pseudo-elementos;</li>
+    <li>Pseudo-classes;</li>
+    <li>Animações e transições.</li>
+</ul>
+
+<ul>
+    <li>JavaScript:</li>
+    <li>Tipos de dados primitivos;</li>
+    <li>Variavéis (const e let);</li>
+    <li>Condicionais;</li>
+    <li>Laço de repetição;</li>
+    <li>Programação Orientada a Objeto (POO);</li>
+    <li>Métodos;</li>
+    <li>Array;</li>
+    <li>Consumo de biblioteca (lib) de terceiros: ScrollReveal;</li>
+    <li>Manipulação de DOM (Document Object Model).</li>
+</ul>
+
