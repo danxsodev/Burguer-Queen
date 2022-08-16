@@ -2,16 +2,22 @@
 
 <h3>Software desenvolvido com foco em praticar conceitos como:</h3>
 
-- Usabilidade: Software utilizável de forma simples, intuitiva e eficiente;
+<p>Usabilidade: Software utilizável de forma simples, intuitiva e eficiente;</p>
 
-- Acessibilidade: descrição de imagens para quem possui deficiência visual, Diretrizes de Acessibilidade para o Conteúdo da Web (WCAG ou Web Content Accessibility Guidelines), Light Mode/Dark Mode baseado no padrão Material Design e WCAG, navegação por teclado;
+<p>Acessibilidade: descrição de imagens para quem possui deficiência visual, Diretrizes de Acessibilidade para o Conteúdo da Web (WCAG ou Web Content Accessibility Guidelines), Light Mode/Dark Mode baseado no padrão Material Design e WCAG, navegação por teclado;</p>
 
-- Portabilidade (Responsivo): Software adaptado para multidispositivos;
+<p>Portabilidade (Responsivo): Software adaptado para multidispositivos;</p>
 
-<h3>Tecnologias e Conceitos aplicados:</h3>
+<h3>Tecnologias</h3>
+<p>Esse projeto foi desenvolvido com as seguintes tecnologias:</p>
+- HTML;
+- CSS;
+- JS.
+
+<h3>Conceitos aplicados nesse projeto</h3>
 - HTML:
-HTML Semântico;
 SEO;
+HTML Semântico;
 Acessibilidade: atributo aria, role e alt nas imagens.
 
 - CSS: 

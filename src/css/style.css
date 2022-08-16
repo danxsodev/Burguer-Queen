@@ -2,8 +2,7 @@
     --height-nav: 7.2rem;
     font-size: 62.5%; /* 1rem = 10 px */
     
-    /*usar variavéis(--variavel) no css quando utilizar hsl para alterar a paleta de cores de maneira facilitada*/
-    /*paleta de cores monocromaticas ou paleta de cores diversas usar hsl(hue (cor), saturation (saturação), lightness (brilho));*/
+    /*usar variavéis(--variavel) no css para alterar a paleta de cores de maneira facilitada*/
 
     /*Light Mode*/
     --primary-color: #662b00;
