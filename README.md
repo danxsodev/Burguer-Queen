@@ -1,81 +1,55 @@
-<<<<<<< HEAD
 <h1>Burguer-Queen</h1>
 
 <h3>Software desenvolvido com foco em praticar conceitos como:</h3>
 
-- Usabilidade: Software utilizável de forma simples, intuitiva e eficiente;
+<ul>
+    <li>Usabilidade: Software utilizável de forma simples, intuitiva e eficiente;</li>
+    <li>Acessibilidade: descrição de imagens para quem possui deficiência visual, Diretrizes de Acessibilidade para o Conteúdo da Web (WCAG ou Web Content Accessibility Guidelines), Light Mode/Dark Mode baseado no padrão Material Design e WCAG, navegação por teclado;</li>
+    <li>Portabilidade (Responsivo): Software adaptado para multidispositivos;</li>
+</ul>
 
-- Acessibilidade: descrição de imagens para quem possui deficiência visual, Diretrizes de Acessibilidade para o Conteúdo da Web (WCAG ou Web Content Accessibility Guidelines), Light Mode/Dark Mode baseado no padrão Material Design e WCAG, navegação por teclado;
+<h3>Tecnologias</h3>
+<p>Esse projeto foi desenvolvido com as seguintes tecnologias:</p>
 
-- Portabilidade (Responsivo): Software adaptado para multidispositivos;
+<ul> 
+    <li>HTML;</li>
+    <li>CSS;</li>
+    <li>JS.</li>
+</ul> 
 
-<h3>Tecnologias e Conceitos aplicados:</h3>
-- HTML:
-HTML Semântico;
-SEO;
-Acessibilidade: atributo aria, role e alt nas imagens.
+<h3>Conceitos das Tecnologias que foram aplicados nesse projeto</h3>
 
-- CSS: 
-Box Model;
-Unidades CSS: auto, %(porcentagem) e rem;
-Specificity;
-Variavéis CSS;
-Layout;
-Flexbox;
-Grid;
-Media Queries (Responsivo);
-Pseudo-elementos;
-Pseudo-classes;
-Animações e transições.
+<ul>
+    <li>HTML:</li>
+</ul>
+<p>SEO;</p>
+<p>HTML Semântico;</p>
+<p>Acessibilidade: atributo aria, role e alt nas imagens.</p>
 
-- JavaScript:
-Tipos de dados primitivos;
-Variavéis (const e let);
-Condicionais;
-Laço de repetição;
-Programação Orientada a Objeto (POO);
-Métodos;
-Array;
-Consumo de biblioteca (lib) de terceiros: ScrollReveal;
-Manipulação de DOM (Document Object Model).
-=======
-<h1>Burguer-Queen</h1>
+<ul>
+    <li>CSS:</li>
+</ul>
+<p>Box Model;</p>
+<p>Unidades CSS: auto, %(porcentagem) e rem;</p>
+<p>Specificity;</p>
+<p>Variavéis CSS;</p>
+<p>Layout;</p>
+<p>Flexbox;</p>
+<p>Grid;</p>
+<p>Media Queries (Responsivo);</p>
+<p>Pseudo-elementos;</p>
+<p>Pseudo-classes;</p>
+<p>Animações e transições.</p>
 
-<h3>Software desenvolvido com foco em praticar conceitos como:</h3>
-
-- Usabilidade: Software utilizável de forma simples, intuitiva e eficiente;
-
-- Acessibilidade: descrição de imagens para quem possui deficiência visual, Diretrizes de Acessibilidade para o Conteúdo da Web (WCAG ou Web Content Accessibility Guidelines), Light Mode/Dark Mode baseado no padrão Material Design e WCAG, navegação por teclado;
-
-- Portabilidade (Responsivo): Software adaptado para multidispositivos;
-
-<h3>Tecnologias e Conceitos aplicados:</h3>
-- HTML:
-HTML Semântico;
-SEO;
-Acessibilidade: atributo aria, role e alt nas imagens.
-
-- CSS: 
-Box Model;
-Unidades CSS: auto, %(porcentagem) e rem;
-Specificity;
-Variavéis CSS;
-Layout;
-Flexbox;
-Grid;
-Media Queries (Responsivo);
-Pseudo-elementos;
-Pseudo-classes;
-Animações e transições.
-
-- JavaScript:
-Tipos de dados primitivos;
-Variavéis (const e let);
-Condicionais;
-Laço de repetição;
-Programação Orientada a Objeto (POO);
-Métodos;
-Array;
-Consumo de biblioteca (lib) de terceiros: ScrollReveal;
-Manipulação de DOM (Document Object Model).
->>>>>>> e53937ca510a89037e120e8f96343ebd73e06a9b
+<ul>
+    <li>JavaScript:</li>
+</ul>
+<p>Tipos de dados primitivos;</p>
+<p>Variavéis (const e let);</p>
+<p>Condicionais;</p>
+<p>Laço de repetição;</p>
+<p>Programação Orientada a Objeto (POO);</p>
+<p>Métodos;</p>
+<p>Array;</p>
+<p>Consumo de biblioteca (lib) de terceiros: ScrollReveal;</p>
+<p>Manipulação de DOM (Document Object Model).</p>
