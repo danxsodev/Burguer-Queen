@@ -35,7 +35,7 @@ ScrollReveal({
     origin: 'left',
     distance: '100px',
     duration: '800',
-    delay: '300',
+    delay: '200',
     reset: 'true'
 }).reveal(`#navigation,
 #home,
