@@ -1,5 +1,7 @@
 <h1>Burguer-Queen</h1>
 
+<br>
+
 <h3>Software desenvolvido com foco em praticar conceitos como:</h3>
 
 <ul>
@@ -8,6 +10,8 @@
     <li>Portabilidade (Responsivo): Software adaptado para multidispositivos;</li>
 </ul>
 
+<br>
+
 <h3>Tecnologias</h3>
 <p>Esse projeto foi desenvolvido com as seguintes tecnologias:</p>
 
@@ -15,7 +19,9 @@
     <li>HTML;</li>
     <li>CSS;</li>
     <li>JS.</li>
-</ul> 
+</ul>
+
+<br>
 
 <h3>Conceitos das Tecnologias que foram aplicados nesse projeto</h3>
 
@@ -25,6 +31,8 @@
 <p>SEO;</p>
 <p>HTML Semântico;</p>
 <p>Acessibilidade: atributo aria, role e alt nas imagens.</p>
+
+<br>
 
 <ul>
     <li>CSS:</li>
@@ -40,6 +48,8 @@
 <p>Pseudo-elementos;</p>
 <p>Pseudo-classes;</p>
 <p>Animações e transições.</p>
+
+<br>
 
 <ul>
     <li>JavaScript:</li>
