@@ -28,38 +28,38 @@
 <ul>
     <li>HTML:</li>
 </ul>
-    <p>SEO;</p>
-    <p>HTML Semântico;</p>
-    <p>Acessibilidade: atributo aria, role e alt nas imagens.</p>
+<p>- SEO;</p>
+<p>- HTML Semântico;</p>
+<p>- Acessibilidade: atributo aria, role e alt nas imagens.</p>
 
 <br><br>
 
 <ul>
     <li>CSS:</li>
 </ul>
-    <p>Box Model;</p>
-    <p>Unidades CSS: auto, %(porcentagem) e rem;</p>
-    <p>Specificity;</p>
-    <p>Variavéis CSS;</p>
-    <p>Layout;</p>
-    <p>Flexbox;</p>
-    <p>Grid;</p>
-    <p>Media Queries (Responsivo);</p>
-    <p>Pseudo-elementos;</p>
-    <p>Pseudo-classes;</p>
-    <p>Animações e transições.</p>
+<p>- Box Model;</p>
+<p>- Unidades CSS: auto, %(porcentagem) e rem;</p>
+<p>- Specificity;</p>
+<p>- Variavéis CSS;</p>
+<p>- Layout;</p>
+<p>- Flexbox;</p>    
+<p>- Grid;</p>
+<p>- Media Queries (Responsivo);</p>
+<p>- Pseudo-elementos;</p>
+<p>- Pseudo-classes;</p>
+<p>- Animações e transições.</p>
 
 <br><br>
 
 <ul>
     <li>JavaScript:</li>
 </ul>
-    <p>Tipos de dados primitivos;</p>
-    <p>Variavéis (const e let);</p>
-    <p>Condicionais;</p>
-    <p>Laço de repetição;</p>
-    <p>Programação Orientada a Objeto (POO);</p>
-    <p>Métodos;</p>
-    <p>Array;</p>
-    <p>Consumo de biblioteca (lib) de terceiros: ScrollReveal;</p>
-    <p>Manipulação de DOM (Document Object Model).</p>
+<p>- Tipos de dados primitivos;</p>
+<p>- Variavéis (const e let);</p>
+<p>- Condicionais;</p>
+<p>- Laço de repetição;</p>
+<p>- Programação Orientada a Objeto (POO);</p>
+<p>- Métodos;</p>
+<p>- Array;</p>
+<p>- Consumo de biblioteca (lib) de terceiros: ScrollReveal;</p>
+<p>- Manipulação de DOM (Document Object Model).</p>
