@@ -1,8 +1,8 @@
 <h1>Burguer-Queen</h1>
 
-<br>
+<br><br>
 
-<h3>Software desenvolvido com foco em praticar conceitos como:</h3>
+<h3>&nbsp; Software desenvolvido com foco em praticar conceitos como:</h3>
 
 <ul>
     <li>Usabilidade: Software utilizável de forma simples, intuitiva e eficiente;</li>
@@ -10,20 +10,20 @@
     <li>Portabilidade (Responsivo): Software adaptado para multidispositivos;</li>
 </ul>
 
-<br>
+<br><br>
 
-<h3>Tecnologias</h3>
+<h3>&nbsp; Tecnologias</h3>
 <p>Esse projeto foi desenvolvido com as seguintes tecnologias:</p>
 
 <ul> 
-    <li>HTML;</li>
-    <li>CSS;</li>
-    <li>JS.</li>
+    <li>![HTML](https://img.shields.io/badge/-HTML-05122A?style=flat&logo=HTML5)&nbsp;</li>
+    <li>![CSS](https://img.shields.io/badge/-CSS-05122A?style=flat&logo=CSS3&logoColor=1572B6)&nbsp;</li>
+    <li>![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript)&nbsp;</li>
 </ul>
 
-<br>
+<br><br>
 
-<h3>Conceitos das Tecnologias que foram aplicados nesse projeto</h3>
+<h3>&nbsp; Conceitos das Tecnologias que foram aplicados nesse projeto</h3>
 
 <ul>
     <li>HTML:</li>
@@ -32,7 +32,7 @@
 <p>HTML Semântico;</p>
 <p>Acessibilidade: atributo aria, role e alt nas imagens.</p>
 
-<br>
+<br><br>
 
 <ul>
     <li>CSS:</li>
@@ -49,7 +49,7 @@
 <p>Pseudo-classes;</p>
 <p>Animações e transições.</p>
 
-<br>
+<br><br>
 
 <ul>
     <li>JavaScript:</li>
