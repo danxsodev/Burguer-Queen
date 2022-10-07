@@ -717,7 +717,7 @@ label:active::after {
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    transform: rotate(180deg);
+    transform: rotate(0deg);
     transition: transform 250ms ease-in;
 }
 
@@ -741,7 +741,7 @@ label:active::after {
 }
 
 #faq .card.active svg {
-    transform: rotate(0deg);
+    transform: rotate(180deg);
     transition: transform 250ms ease-in;
 }
 
